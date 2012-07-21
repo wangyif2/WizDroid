@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d9b459f-5d66-412c-9be8-17fa92cd6770" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/yifandriod/wizdroid/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Wizdroid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,7 +72,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yifandriod/wizdroid/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="51" selection-start="700" selection-end="700" vertical-scroll-proportion="0.6756303">
+            <state line="39" column="43" selection-start="1301" selection-end="1333" vertical-scroll-proportion="0.589916">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -654,7 +654,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yifandriod/wizdroid/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="51" selection-start="700" selection-end="700" vertical-scroll-proportion="0.6756303">
+        <state line="39" column="43" selection-start="1301" selection-end="1333" vertical-scroll-proportion="0.589916">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
