@@ -20,19 +20,9 @@ public class RemoteControlReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        WizdroidApplication.getInjector().injectMembers(this);
 
-        android.util.Log.i("WizDroid", "Received media button action");
-        //To change body of implemented methods use File | Settings | File Templates.
-
-//        if (Intent.ACTION_MEDIA_BUTTON.equals(intent.getAction())) {
-//            KeyEvent event = (KeyEvent)intent.getParcelableExtra(Intent.EXTRA_KEY_EVENT);
-//            if (KeyEvent.KEYCODE_MEDIA_PLAY == event.getKeyCode()) {
-//
-////                wizLogger.info("test test madafaka");
-//                android.util.Log.i("WizDroid", "android log");
-//
-//                abortBroadcast();
-//            }
-//        }
+        wizLogger.info("Received media button action");
+        abortBroadcast();
     }
 }

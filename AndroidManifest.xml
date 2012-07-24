@@ -3,8 +3,8 @@
       package="com.yifandriod.wizdroid"
       android:versionCode="1"
       android:versionName="1.0">
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
-        <activity android:name="Main"
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name=".WizdroidApplication">
+        <activity android:name=".WizDroid"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,5 +17,7 @@
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </receiver>
+
+        <receiver android:process=":remote" android:name=".OnAlarmReceiver"></receiver>
     </application>
 </manifest>
