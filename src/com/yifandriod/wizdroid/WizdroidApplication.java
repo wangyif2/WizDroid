@@ -1,6 +1,8 @@
 package com.yifandriod.wizdroid;
 
 import android.app.Application;
+import android.app.PendingIntent;
+import android.content.Intent;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 
@@ -13,11 +15,28 @@ import com.google.inject.Injector;
  */
 public class WizdroidApplication extends Application {
     public static Injector injector;
+    public static boolean blockingState;
+    public static PendingIntent pi;
 
     @Override
     public void onCreate() {
         super.onCreate();
+
         createInjector();
+        createPendingIntent();
+
+        blockingState = false;
+    }
+
+    private void createPendingIntent() {
+        if (pi ==null){
+            Intent i = new Intent(this, OnAlarmReceiver.class);
+            pi = PendingIntent.getBroadcast(this, 0, i, 0);
+        }
+    }
+
+    public static PendingIntent getPi(){
+        return pi;
     }
 
     private void createInjector() {

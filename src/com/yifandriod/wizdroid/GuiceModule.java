@@ -1,5 +1,6 @@
 package com.yifandriod.wizdroid;
 
+import android.app.AlarmManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.media.AudioManager;
@@ -34,6 +35,13 @@ public class GuiceModule extends AbstractModule{
             @Override
             public AudioManager get() {
                 return (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
+            }
+        });
+
+        bind(AlarmManager.class).toProvider(new Provider<AlarmManager>() {
+            @Override
+            public AlarmManager get() {
+                return (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
             }
         });
 
