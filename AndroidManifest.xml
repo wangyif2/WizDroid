@@ -1,23 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.yifandriod.wizdroid"
-      android:versionCode="1"
-      android:versionName="1.0">
-    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name=".WizdroidApplication">
-        <activity android:name=".WizDroid"
-                  android:label="@string/app_name">
+          package="com.yifandroid.wizdroid"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk
+            android:minSdkVersion="8"
+            android:targetSdkVersion="15"/>
+
+    <application
+            android:icon="@drawable/wizdroid"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:name=".WizdroidApplication">
+        <activity
+                android:name=".WizDroidAcitivity"
+                android:launchMode="singleInstance"
+                android:label="@string/title_activity_wiz_droid_acitivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <receiver android:name=".RemoteControlReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.MEDIA_BUTTON" />
+        <receiver android:name=".WizMediaActionReceiver">
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
             </intent-filter>
         </receiver>
 
-        <receiver android:process=":remote" android:name=".OnAlarmReceiver"></receiver>
+        <receiver android:process=":remote" android:name=".WizAlarmReceiver"></receiver>
+
     </application>
+
 </manifest>
