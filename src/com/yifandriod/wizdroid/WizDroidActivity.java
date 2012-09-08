@@ -11,7 +11,7 @@ import android.os.SystemClock;
 import com.google.inject.Inject;
 import com.yifandriod.wizdroid.WizLog.WizLogger;
 
-public class WizDroid extends Activity {
+public class WizDroidActivity extends Activity {
     @Inject
     private WizLogger wizLogger;
     @Inject
@@ -43,7 +43,7 @@ public class WizDroid extends Activity {
 
     private void scheduleRequestMediaButtonReceiver() {
         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        Intent i = new Intent(this, OnAlarmReceiver.class);
+        Intent i = new Intent(this, WizAlarmReceiver.class);
         PendingIntent pi = PendingIntent.getBroadcast(this, 0, i, 0);
         alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime(), 300, pi);
     }

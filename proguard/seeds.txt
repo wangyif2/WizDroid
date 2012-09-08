@@ -1,0 +1,91 @@
+android.support.v4.app.BackStackState
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment$SavedState
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentManagerState
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
+android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
+android.support.v4.view.PagerTabStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.PagerTabStrip: void setBackgroundColor(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundResource(int)
+android.support.v4.view.PagerTabStrip: void setDrawFullUnderline(boolean)
+android.support.v4.view.PagerTabStrip: boolean getDrawFullUnderline()
+android.support.v4.view.PagerTabStrip: int getMinHeight()
+android.support.v4.view.PagerTitleStrip: void setSingleLineAllCaps(android.widget.TextView)
+android.support.v4.view.PagerTitleStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTitleStrip: int getTextSpacing()
+android.support.v4.view.PagerTitleStrip: void setNonPrimaryAlpha(float)
+android.support.v4.view.PagerTitleStrip: void setTextColor(int)
+android.support.v4.view.PagerTitleStrip: void setGravity(int)
+android.support.v4.view.PagerTitleStrip: int getMinHeight()
+android.support.v4.view.ViewPager: void setScrollState(int)
+android.support.v4.view.ViewPager: void setAdapter(android.support.v4.view.PagerAdapter)
+android.support.v4.view.ViewPager: android.support.v4.view.PagerAdapter getAdapter()
+android.support.v4.view.ViewPager: void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+android.support.v4.view.ViewPager: void setCurrentItem(int)
+android.support.v4.view.ViewPager: int getCurrentItem()
+android.support.v4.view.ViewPager: void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+android.support.v4.view.ViewPager: int getOffscreenPageLimit()
+android.support.v4.view.ViewPager: void setOffscreenPageLimit(int)
+android.support.v4.view.ViewPager: void setPageMargin(int)
+android.support.v4.view.ViewPager: int getPageMargin()
+android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
+android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$SavedState
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+com.google.inject.Key$NullAnnotationStrategy: com.google.inject.Key$NullAnnotationStrategy[] values()
+com.google.inject.Key$NullAnnotationStrategy: com.google.inject.Key$NullAnnotationStrategy valueOf(java.lang.String)
+com.google.inject.Stage: com.google.inject.Stage[] values()
+com.google.inject.Stage: com.google.inject.Stage valueOf(java.lang.String)
+com.google.inject.internal.BytecodeGen$Visibility: com.google.inject.internal.BytecodeGen$Visibility[] values()
+com.google.inject.internal.BytecodeGen$Visibility: com.google.inject.internal.BytecodeGen$Visibility valueOf(java.lang.String)
+com.google.inject.internal.InjectorImpl$JitLimitation: com.google.inject.internal.InjectorImpl$JitLimitation[] values()
+com.google.inject.internal.InjectorImpl$JitLimitation: com.google.inject.internal.InjectorImpl$JitLimitation valueOf(java.lang.String)
+com.google.inject.internal.util.$AbstractIterator$State: com.google.inject.internal.util.$AbstractIterator$State[] values()
+com.google.inject.internal.util.$AbstractIterator$State: com.google.inject.internal.util.$AbstractIterator$State valueOf(java.lang.String)
+com.google.inject.internal.util.$MapMaker$Strength: com.google.inject.internal.util.$MapMaker$Strength[] values()
+com.google.inject.internal.util.$MapMaker$Strength: com.google.inject.internal.util.$MapMaker$Strength valueOf(java.lang.String)
+com.google.inject.spi.InjectionPoint$Position: com.google.inject.spi.InjectionPoint$Position[] values()
+com.google.inject.spi.InjectionPoint$Position: com.google.inject.spi.InjectionPoint$Position valueOf(java.lang.String)
+com.yifandroid.wizdroid.R$color: int gray
+com.yifandroid.wizdroid.R$color: int lite
+com.yifandroid.wizdroid.R$dimen: int padding_large
+com.yifandroid.wizdroid.R$dimen: int padding_medium
+com.yifandroid.wizdroid.R$dimen: int padding_small
+com.yifandroid.wizdroid.R$drawable: int button
+com.yifandroid.wizdroid.R$drawable: int ic_action_search
+com.yifandroid.wizdroid.R$drawable: int ic_launcher
+com.yifandroid.wizdroid.R$drawable: int round_background
+com.yifandroid.wizdroid.R$drawable: int round_background_lite
+com.yifandroid.wizdroid.R$drawable: int round_background_pressed
+com.yifandroid.wizdroid.R$drawable: int wizdroid
+com.yifandroid.wizdroid.R$id: int textView1
+com.yifandroid.wizdroid.R$id: int toggleButton1
+com.yifandroid.wizdroid.R$id: int wizdroid_off
+com.yifandroid.wizdroid.R$id: int wizdroid_on
+com.yifandroid.wizdroid.R$layout: int activity_wiz_droid_acitivity
+com.yifandroid.wizdroid.R$menu: int activity_wiz_droid_acitivity
+com.yifandroid.wizdroid.R$string: int app_name
+com.yifandroid.wizdroid.R$string: int block_msg
+com.yifandroid.wizdroid.R$string: int hello_world
+com.yifandroid.wizdroid.R$string: int menu_settings
+com.yifandroid.wizdroid.R$string: int title_activity_wiz_droid_acitivity
+com.yifandroid.wizdroid.R$style: int AppTheme
+com.yifandroid.wizdroid.WizAlarmReceiver
+com.yifandroid.wizdroid.WizAlarmReceiver: WizAlarmReceiver()
+com.yifandroid.wizdroid.WizDroidAcitivity
+com.yifandroid.wizdroid.WizDroidAcitivity: WizDroidAcitivity()
+com.yifandroid.wizdroid.WizLog.LogLevel: com.yifandroid.wizdroid.WizLog.LogLevel[] values()
+com.yifandroid.wizdroid.WizLog.LogLevel: com.yifandroid.wizdroid.WizLog.LogLevel valueOf(java.lang.String)
+com.yifandroid.wizdroid.WizMediaActionReceiver
+com.yifandroid.wizdroid.WizMediaActionReceiver: WizMediaActionReceiver()
+com.yifandroid.wizdroid.WizdroidApplication
+com.yifandroid.wizdroid.WizdroidApplication: WizdroidApplication()

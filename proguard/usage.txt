@@ -1,0 +1,1343 @@
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatIcs
+android.support.v4.app.ActivityCompat
+android.support.v4.app.ActivityCompatHoneycomb:
+    27:27:ActivityCompatHoneycomb()
+    34:35:static void dump(android.app.Activity,java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+android.support.v4.app.BackStackRecord:
+    static final java.lang.String TAG
+    static final int OP_NULL
+    static final int OP_ADD
+    static final int OP_REPLACE
+    static final int OP_REMOVE
+    static final int OP_HIDE
+    static final int OP_SHOW
+    static final int OP_DETACH
+    static final int OP_ATTACH
+    296:296:public int getId()
+    300:300:public int getBreadCrumbTitleRes()
+    304:304:public int getBreadCrumbShortTitleRes()
+    308:311:public java.lang.CharSequence getBreadCrumbTitle()
+    315:318:public java.lang.CharSequence getBreadCrumbShortTitle()
+    337:338:public android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    342:343:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    347:348:public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)
+    352:376:private void doAddOp(int,android.support.v4.app.Fragment,java.lang.String,int)
+    379:379:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    383:388:public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    392:397:public android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    401:406:public android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    410:415:public android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    419:424:public android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment)
+    428:433:public android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment)
+    437:437:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    442:446:public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    450:451:public android.support.v4.app.FragmentTransaction setTransition(int)
+    455:456:public android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    460:466:public android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    470:470:public boolean isAddToBackStackAllowed()
+    474:479:public android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    483:485:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    489:491:public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    495:497:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    501:503:public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    532:532:public int commit()
+    536:536:public int commitAllowingStateLoss()
+    540:549:int commitInternal(boolean)
+    727:727:public int getTransition()
+    731:731:public int getTransitionStyle()
+    735:735:public boolean isEmpty()
+android.support.v4.app.DialogFragment
+android.support.v4.app.Fragment:
+    static final int INITIALIZING
+    static final int CREATED
+    static final int ACTIVITY_CREATED
+    static final int STOPPED
+    static final int STARTED
+    static final int RESUMED
+    465:465:public final int getId()
+    472:472:public final java.lang.String getTag()
+    483:487:public void setArguments(android.os.Bundle)
+    494:494:public final android.os.Bundle getArguments()
+    506:511:public void setInitialSavedState(android.support.v4.app.Fragment$SavedState)
+    525:527:public void setTargetFragment(android.support.v4.app.Fragment,int)
+    533:533:public final android.support.v4.app.Fragment getTargetFragment()
+    540:540:public final int getTargetRequestCode()
+    554:557:public final android.content.res.Resources getResources()
+    567:567:public final java.lang.CharSequence getText(int)
+    577:577:public final java.lang.String getString(int)
+    590:590:public final varargs java.lang.String getString(int,java.lang.Object[])
+    601:601:public final android.support.v4.app.FragmentManager getFragmentManager()
+    608:608:public final boolean isAdded()
+    617:617:public final boolean isDetached()
+    626:626:public final boolean isRemoving()
+    637:637:public final boolean isInLayout()
+    645:645:public final boolean isResumed()
+    654:654:public final boolean isVisible()
+    666:666:public final boolean isHidden()
+    694:695:public void setRetainInstance(boolean)
+    698:698:public final boolean getRetainInstance()
+    709:715:public void setHasOptionsMenu(boolean)
+    727:733:public void setMenuVisibility(boolean)
+    749:754:public void setUserVisibleHint(boolean)
+    761:761:public boolean getUserVisibleHint()
+    768:776:public android.support.v4.app.LoaderManager getLoaderManager()
+    784:788:public void startActivity(android.content.Intent)
+    795:799:public void startActivityForResult(android.content.Intent,int)
+    950:950:public android.view.View getView()
+    1222:1223:public void registerForContextMenu(android.view.View)
+    1233:1234:public void unregisterForContextMenu(android.view.View)
+android.support.v4.app.Fragment$SavedState:
+    295:297:Fragment$SavedState(android.os.Bundle)
+android.support.v4.app.FragmentActivity:
+    private static final java.lang.String TAG
+    private static final java.lang.String FRAGMENTS_TAG
+    private static final int HONEYCOMB
+    static final int MSG_REALLY_STOPPED
+    static final int MSG_RESUME_PENDING
+    69:122:public FragmentActivity()
+    576:578:public java.lang.Object getLastCustomNonConfigurationInstance()
+    680:680:public android.support.v4.app.FragmentManager getSupportFragmentManager()
+    700:708:public void startActivityFromFragment(android.support.v4.app.Fragment,android.content.Intent,int)
+    729:734:public android.support.v4.app.LoaderManager getSupportLoaderManager()
+android.support.v4.app.FragmentActivity$1
+android.support.v4.app.FragmentActivity$FragmentTag:
+    public static final int Fragment_id
+    public static final int Fragment_name
+    public static final int Fragment_tag
+    122:122:FragmentActivity$FragmentTag()
+android.support.v4.app.FragmentManager:
+    public static final int POP_BACK_STACK_INCLUSIVE
+    59:114:public FragmentManager()
+    public abstract android.support.v4.app.FragmentTransaction beginTransaction()
+    139:139:public android.support.v4.app.FragmentTransaction openTransaction()
+    public abstract boolean executePendingTransactions()
+    public abstract android.support.v4.app.Fragment findFragmentById(int)
+    public abstract android.support.v4.app.Fragment findFragmentByTag(java.lang.String)
+    public abstract void popBackStack()
+    public abstract boolean popBackStackImmediate()
+    public abstract void popBackStack(java.lang.String,int)
+    public abstract boolean popBackStackImmediate(java.lang.String,int)
+    public abstract void popBackStack(int,int)
+    public abstract boolean popBackStackImmediate(int,int)
+    public abstract int getBackStackEntryCount()
+    public abstract android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    public abstract void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void putFragment(android.os.Bundle,java.lang.String,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.Fragment getFragment(android.os.Bundle,java.lang.String)
+    public abstract android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    334:335:public static void enableDebugLogging(boolean)
+android.support.v4.app.FragmentManager$BackStackEntry
+android.support.v4.app.FragmentManagerImpl:
+    static final java.lang.String TAG
+    static final java.lang.String TARGET_REQUEST_CODE_STATE_TAG
+    static final java.lang.String TARGET_STATE_TAG
+    static final java.lang.String VIEW_STATE_TAG
+    static final java.lang.String USER_VISIBLE_HINT_TAG
+    static final int ANIM_DUR
+    public static final int ANIM_STYLE_OPEN_ENTER
+    public static final int ANIM_STYLE_OPEN_EXIT
+    public static final int ANIM_STYLE_CLOSE_ENTER
+    public static final int ANIM_STYLE_CLOSE_EXIT
+    public static final int ANIM_STYLE_FADE_ENTER
+    public static final int ANIM_STYLE_FADE_EXIT
+    377:417:FragmentManagerImpl()
+    426:426:public android.support.v4.app.FragmentTransaction beginTransaction()
+    436:441:public void popBackStack()
+    452:457:public void popBackStack(java.lang.String,int)
+    461:463:public boolean popBackStackImmediate(java.lang.String,int)
+    468:476:public void popBackStack(int,int)
+    480:485:public boolean popBackStackImmediate(int,int)
+    490:490:public int getBackStackEntryCount()
+    495:495:public android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    500:504:public void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    508:511:public void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    542:550:public android.support.v4.app.Fragment$SavedState saveFragmentInstanceState(android.support.v4.app.Fragment)
+    1301:1309:public android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+    1324:1340:public void enqueueAction(java.lang.Runnable,boolean)
+    1343:1359:public int allocBackStackIndex(android.support.v4.app.BackStackRecord)
+android.support.v4.app.FragmentManagerImpl$1
+android.support.v4.app.FragmentManagerImpl$2
+android.support.v4.app.FragmentManagerImpl$3
+android.support.v4.app.FragmentManagerImpl$4
+android.support.v4.app.FragmentPagerAdapter
+android.support.v4.app.FragmentStatePagerAdapter
+android.support.v4.app.FragmentTransaction:
+    public static final int TRANSIT_ENTER_MASK
+    public static final int TRANSIT_EXIT_MASK
+    public static final int TRANSIT_UNSET
+    public static final int TRANSIT_NONE
+    public static final int TRANSIT_FRAGMENT_OPEN
+    public static final int TRANSIT_FRAGMENT_CLOSE
+    public static final int TRANSIT_FRAGMENT_FADE
+    public abstract android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction remove(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment)
+    public abstract boolean isEmpty()
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    public abstract android.support.v4.app.FragmentTransaction setTransition(int)
+    public abstract android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    public abstract android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    public abstract boolean isAddToBackStackAllowed()
+    public abstract android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    public abstract int commit()
+    public abstract int commitAllowingStateLoss()
+android.support.v4.app.ListFragment
+android.support.v4.app.ListFragment$1
+android.support.v4.app.ListFragment$2
+android.support.v4.app.LoaderManager:
+    public abstract android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract void destroyLoader(int)
+    public abstract android.support.v4.content.Loader getLoader(int)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    177:178:public static void enableDebugLogging(boolean)
+android.support.v4.app.LoaderManagerImpl:
+    static final java.lang.String TAG
+    boolean mRetainingStarted
+    boolean mCreatingLoader
+    486:489:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    495:500:private android.support.v4.app.LoaderManagerImpl$LoaderInfo createAndInstallLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    505:512:void installLoader(android.support.v4.app.LoaderManagerImpl$LoaderInfo)
+    540:562:public android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    590:644:public android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    655:675:public void destroyLoader(int)
+    683:694:public android.support.v4.content.Loader getLoader(int)
+android.support.v4.app.LoaderManagerImpl$LoaderInfo:
+    226:230:public LoaderManagerImpl$LoaderInfo(android.support.v4.app.LoaderManagerImpl,int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    360:413:public void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.app.NavUtils
+android.support.v4.app.NavUtils$NavUtilsImpl
+android.support.v4.app.NavUtils$NavUtilsImplBase
+android.support.v4.app.NavUtils$NavUtilsImplJB
+android.support.v4.app.NavUtilsJB
+android.support.v4.app.NotificationCompat
+android.support.v4.app.NotificationCompat$Builder
+android.support.v4.app.NotificationCompat$NotificationCompatImpl
+android.support.v4.app.NotificationCompat$NotificationCompatImplBase
+android.support.v4.app.NotificationCompat$NotificationCompatImplHoneycomb
+android.support.v4.app.NotificationCompatHoneycomb
+android.support.v4.app.ServiceCompat
+android.support.v4.app.ShareCompat
+android.support.v4.app.ShareCompat$IntentBuilder
+android.support.v4.app.ShareCompat$IntentReader
+android.support.v4.app.ShareCompat$ShareCompatImpl
+android.support.v4.app.ShareCompat$ShareCompatImplBase
+android.support.v4.app.ShareCompat$ShareCompatImplICS
+android.support.v4.app.ShareCompat$ShareCompatImplJB
+android.support.v4.app.ShareCompatICS
+android.support.v4.app.ShareCompatJB
+android.support.v4.app.TaskStackBuilder
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImpl
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplBase
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplHoneycomb
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplJellybean
+android.support.v4.app.TaskStackBuilderHoneycomb
+android.support.v4.app.TaskStackBuilderJellybean
+android.support.v4.content.AsyncTaskLoader
+android.support.v4.content.AsyncTaskLoader$LoadTask
+android.support.v4.content.ContextCompat
+android.support.v4.content.ContextCompatHoneycomb
+android.support.v4.content.ContextCompatJellybean
+android.support.v4.content.CursorLoader
+android.support.v4.content.IntentCompat
+android.support.v4.content.Loader:
+    android.content.Context mContext
+    90:92:public Loader(android.content.Context)
+    102:105:public void deliverResult(java.lang.Object)
+    111:111:public android.content.Context getContext()
+    118:118:public int getId()
+    157:157:public boolean isStarted()
+    166:166:public boolean isAbandoned()
+    175:175:public boolean isReset()
+    217:218:public void forceLoad()
+    225:225:protected void onForceLoad()
+    261:263:public void abandon()
+    275:275:protected void onAbandon()
+    312:314:public boolean takeContentChanged()
+    326:334:public void onContentChanged()
+android.support.v4.content.Loader$ForceLoadContentObserver
+android.support.v4.content.Loader$OnLoadCompleteListener:
+    public abstract void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.content.LocalBroadcastManager
+android.support.v4.content.LocalBroadcastManager$1
+android.support.v4.content.LocalBroadcastManager$BroadcastRecord
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord
+android.support.v4.content.ModernAsyncTask
+android.support.v4.content.ModernAsyncTask$1
+android.support.v4.content.ModernAsyncTask$2
+android.support.v4.content.ModernAsyncTask$3
+android.support.v4.content.ModernAsyncTask$4
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult
+android.support.v4.content.ModernAsyncTask$InternalHandler
+android.support.v4.content.ModernAsyncTask$Status
+android.support.v4.content.ModernAsyncTask$WorkerRunnable
+android.support.v4.content.pm.ActivityInfoCompat
+android.support.v4.database.DatabaseUtilsCompat
+android.support.v4.net.ConnectivityManagerCompat
+android.support.v4.net.ConnectivityManagerCompat$BaseConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$GingerbreadConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$HoneycombMR2ConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompat$JellyBeanConnectivityManagerCompatImpl
+android.support.v4.net.ConnectivityManagerCompatGingerbread
+android.support.v4.net.ConnectivityManagerCompatHoneycombMR2
+android.support.v4.net.ConnectivityManagerCompatJellyBean
+android.support.v4.net.TrafficStatsCompat
+android.support.v4.net.TrafficStatsCompat$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$1
+android.support.v4.net.TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags
+android.support.v4.net.TrafficStatsCompat$IcsTrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompat$TrafficStatsCompatImpl
+android.support.v4.net.TrafficStatsCompatIcs
+android.support.v4.os.ParcelableCompat:
+    26:42:public ParcelableCompat()
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub:
+    22:22:ParcelableCompatCreatorHoneycombMR2Stub()
+android.support.v4.util.DebugUtils:
+    25:25:public DebugUtils()
+android.support.v4.util.LongSparseArray
+android.support.v4.util.LruCache
+android.support.v4.util.SparseArrayCompat:
+    107:111:public void removeAtRange(int,int)
+    236:241:public void setValueAt(int,java.lang.Object)
+    249:253:public int indexOfKey(int)
+    265:273:public int indexOfValue(java.lang.Object)
+    296:323:public void append(int,java.lang.Object)
+android.support.v4.util.TimeUtils
+android.support.v4.view.AccessibilityDelegateCompat
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateJellyBeanImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl
+android.support.v4.view.AccessibilityDelegateCompatIcs
+android.support.v4.view.AccessibilityDelegateCompatIcs$1
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge
+android.support.v4.view.AccessibilityDelegateCompatJellyBean
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$1
+android.support.v4.view.AccessibilityDelegateCompatJellyBean$AccessibilityDelegateBridgeJellyBean
+android.support.v4.view.KeyEventCompat:
+    25:95:public KeyEventCompat()
+    127:127:public static int normalizeMetaState(int)
+    131:131:public static boolean metaStateHasModifiers(int,int)
+    135:135:public static boolean metaStateHasNoModifiers(int)
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl:
+    private static final int META_MODIFIER_MASK
+    private static final int META_ALL_MASK
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl:
+    98:98:public int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl:
+    public abstract int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompatHoneycomb:
+    24:24:KeyEventCompatHoneycomb()
+    26:26:public static int normalizeMetaState(int)
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompat
+android.support.v4.view.MenuItemCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuItemCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuItemCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompatHoneycomb
+android.support.v4.view.MotionEventCompat:
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_HOVER_MOVE
+    public static final int ACTION_SCROLL
+    public static final int ACTION_POINTER_INDEX_MASK
+    public static final int ACTION_POINTER_INDEX_SHIFT
+    public static final int ACTION_HOVER_ENTER
+    public static final int ACTION_HOVER_EXIT
+    25:75:public MotionEventCompat()
+    174:174:public static int getActionMasked(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompatEclair:
+    24:24:MotionEventCompatEclair()
+android.support.v4.view.PagerAdapter:
+    public static final int POSITION_UNCHANGED
+    public static final int POSITION_NONE
+    78:79:public PagerAdapter()
+    276:277:public void notifyDataSetChanged()
+    297:297:public java.lang.CharSequence getPageTitle(int)
+android.support.v4.view.PagerTabStrip
+android.support.v4.view.PagerTabStrip$1
+android.support.v4.view.PagerTabStrip$2
+android.support.v4.view.PagerTitleStrip
+android.support.v4.view.PagerTitleStrip$1
+android.support.v4.view.PagerTitleStrip$PageListener
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImpl
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplBase
+android.support.v4.view.PagerTitleStrip$PagerTitleStripImplIcs
+android.support.v4.view.PagerTitleStripIcs
+android.support.v4.view.PagerTitleStripIcs$SingleLineAllCapsTransform
+android.support.v4.view.VelocityTrackerCompat:
+    25:51:public VelocityTrackerCompat()
+    91:91:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl:
+    44:44:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl:
+    58:58:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl:
+    public abstract float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompatHoneycomb:
+    24:24:VelocityTrackerCompatHoneycomb()
+    29:29:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.ViewCompat:
+    public static final int OVER_SCROLL_ALWAYS
+    public static final int OVER_SCROLL_IF_CONTENT_SCROLLS
+    public static final int OVER_SCROLL_NEVER
+    private static final long FAKE_FRAME_TIME
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_AUTO
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_YES
+    public static final int IMPORTANT_FOR_ACCESSIBILITY_NO
+    29:186:public ViewCompat()
+    264:264:public static boolean canScrollVertically(android.view.View,int)
+    293:294:public static void setOverScrollMode(android.view.View,int)
+    330:331:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    363:364:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    399:400:public static void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    414:415:public static void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    426:426:public static boolean hasTransientState(android.view.View)
+    437:438:public static void setHasTransientState(android.view.View,boolean)
+    468:469:public static void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    482:483:public static void postOnAnimation(android.view.View,java.lang.Runnable)
+    499:500:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    515:515:public static int getImportantForAccessibility(android.view.View)
+    531:532:public static void setImportantForAccessibility(android.view.View,int)
+    558:558:public static android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompat$BaseViewCompatImpl:
+    89:89:public boolean canScrollVertically(android.view.View,int)
+    96:96:public void setOverScrollMode(android.view.View,int)
+    99:99:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    102:102:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    105:105:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    108:108:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    111:111:public boolean hasTransientState(android.view.View)
+    115:115:public void setHasTransientState(android.view.View,boolean)
+    120:121:public void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    123:124:public void postOnAnimation(android.view.View,java.lang.Runnable)
+    126:127:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    132:132:public int getImportantForAccessibility(android.view.View)
+    136:136:public void setImportantForAccessibility(android.view.View,int)
+    138:138:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompat$GBViewCompatImpl:
+    149:150:public void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompat$ICSViewCompatImpl:
+    166:166:public boolean canScrollVertically(android.view.View,int)
+    170:171:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    174:175:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    178:179:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    182:183:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$JBViewCompatImpl:
+    189:189:public boolean hasTransientState(android.view.View)
+    193:194:public void setHasTransientState(android.view.View,boolean)
+    201:202:public void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    205:206:public void postOnAnimation(android.view.View,java.lang.Runnable)
+    209:210:public void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    213:213:public int getImportantForAccessibility(android.view.View)
+    217:218:public void setImportantForAccessibility(android.view.View,int)
+    221:225:public android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompat$ViewCompatImpl:
+    public abstract boolean canScrollVertically(android.view.View,int)
+    public abstract void setOverScrollMode(android.view.View,int)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    public abstract boolean hasTransientState(android.view.View)
+    public abstract void setHasTransientState(android.view.View,boolean)
+    public abstract void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    public abstract void postOnAnimation(android.view.View,java.lang.Runnable)
+    public abstract void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    public abstract int getImportantForAccessibility(android.view.View)
+    public abstract void setImportantForAccessibility(android.view.View,int)
+    public abstract android.support.v4.view.accessibility.AccessibilityNodeProviderCompat getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewCompatGingerbread:
+    21:21:ViewCompatGingerbread()
+    27:28:public static void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompatHC:
+    21:21:ViewCompatHC()
+android.support.v4.view.ViewCompatICS:
+    27:27:ViewCompatICS()
+    34:34:public static boolean canScrollVertically(android.view.View,int)
+    38:39:public static void setAccessibilityDelegate(android.view.View,java.lang.Object)
+    42:43:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    46:47:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    50:51:public static void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+android.support.v4.view.ViewCompatJB:
+    24:24:public ViewCompatJB()
+    27:27:public static boolean hasTransientState(android.view.View)
+    31:32:public static void setHasTransientState(android.view.View,boolean)
+    40:41:public static void postInvalidateOnAnimation(android.view.View,int,int,int,int)
+    44:45:public static void postOnAnimation(android.view.View,java.lang.Runnable)
+    48:49:public static void postOnAnimationDelayed(android.view.View,java.lang.Runnable,long)
+    52:52:public static int getImportantForAccessibility(android.view.View)
+    56:57:public static void setImportantForAccessibility(android.view.View,int)
+    60:60:public static java.lang.Object getAccessibilityNodeProvider(android.view.View)
+android.support.v4.view.ViewConfigurationCompat
+android.support.v4.view.ViewConfigurationCompat$BaseViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$FroyoViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompatFroyo
+android.support.v4.view.ViewGroupCompat
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatIcsImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatStubImpl
+android.support.v4.view.ViewGroupCompatIcs
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int DEFAULT_GUTTER_SIZE
+    private boolean mIgnoreGutter
+    private static final int INVALID_POINTER
+    private static final int CLOSE_ENOUGH
+    private long mFakeDragBeginTime
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    296:298:public ViewPager(android.content.Context)
+    301:303:public ViewPager(android.content.Context,android.util.AttributeSet)
+    306:330:void initViewPager()
+    514:516:android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    638:639:void smoothScrollTo(int,int)
+    2025:2041:public boolean beginFakeDrag()
+    2051:2072:public void endFakeDrag()
+    2082:2120:public void fakeDragBy(float)
+    2132:2132:public boolean isFakeDragging()
+    82:82:static synthetic android.support.v4.view.PagerAdapter access$100(android.support.v4.view.ViewPager)
+    82:82:static synthetic int access$200(android.support.v4.view.ViewPager)
+android.support.v4.view.ViewPager$MyAccessibilityDelegate
+android.support.v4.view.ViewPager$SimpleOnPageChangeListener
+android.support.v4.view.accessibility.AccessibilityEventCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventIcsImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventStubImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventVersionImpl
+android.support.v4.view.accessibility.AccessibilityEventCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerStubImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerVersionImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$1
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoJellybeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatIcs
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderJellyBeanImpl$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompat$AccessibilityNodeProviderStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$1
+android.support.v4.view.accessibility.AccessibilityNodeProviderCompatJellyBean$AccessibilityNodeInfoBridge
+android.support.v4.view.accessibility.AccessibilityRecordCompat
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsMr1Impl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordJellyBeanImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordStubImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcsMr1
+android.support.v4.view.accessibility.AccessibilityRecordCompatJellyBean
+android.support.v4.widget.CursorAdapter
+android.support.v4.widget.CursorAdapter$1
+android.support.v4.widget.CursorAdapter$ChangeObserver
+android.support.v4.widget.CursorAdapter$MyDataSetObserver
+android.support.v4.widget.CursorFilter
+android.support.v4.widget.CursorFilter$CursorFilterClient
+android.support.v4.widget.EdgeEffectCompat:
+    132:134:public EdgeEffectCompat(android.content.Context)
+    204:204:public boolean onAbsorb(int)
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl:
+    60:60:public java.lang.Object newEdgeEffect(android.content.Context)
+    82:82:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl:
+    92:92:public java.lang.Object newEdgeEffect(android.content.Context)
+    116:116:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl:
+    public abstract java.lang.Object newEdgeEffect(android.content.Context)
+    public abstract boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompatIcs:
+    28:28:EdgeEffectCompatIcs()
+    30:30:public static java.lang.Object newEdgeEffect(android.content.Context)
+    57:58:public static boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.ResourceCursorAdapter
+android.support.v4.widget.ScrollerCompat
+android.support.v4.widget.ScrollerCompat$ScrollerCompatImplIcs
+android.support.v4.widget.ScrollerCompatIcs
+android.support.v4.widget.SearchViewCompat
+android.support.v4.widget.SearchViewCompat$OnQueryTextListenerCompat
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$1
+android.support.v4.widget.SearchViewCompat$SearchViewCompatImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatStubImpl
+android.support.v4.widget.SearchViewCompatHoneycomb
+android.support.v4.widget.SearchViewCompatHoneycomb$1
+android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge
+android.support.v4.widget.SimpleCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder
+com.google.inject.AbstractModule:
+    75:75:protected com.google.inject.Binder binder()
+    83:84:protected void bindScope(java.lang.Class,com.google.inject.Scope)
+    90:90:protected com.google.inject.binder.LinkedBindingBuilder bind(com.google.inject.Key)
+    97:97:protected com.google.inject.binder.AnnotatedBindingBuilder bind(com.google.inject.TypeLiteral)
+    111:111:protected com.google.inject.binder.AnnotatedConstantBindingBuilder bindConstant()
+    118:119:protected void install(com.google.inject.Module)
+    125:126:protected varargs void addError(java.lang.String,java.lang.Object[])
+    132:133:protected void addError(java.lang.Throwable)
+    140:141:protected void addError(com.google.inject.spi.Message)
+    148:149:protected void requestInjection(java.lang.Object)
+    155:156:protected varargs void requestStaticInjection(java.lang.Class[])
+    180:181:protected void requireBinding(com.google.inject.Key)
+    192:193:protected void requireBinding(java.lang.Class)
+    200:200:protected com.google.inject.Provider getProvider(com.google.inject.Key)
+    208:208:protected com.google.inject.Provider getProvider(java.lang.Class)
+    217:218:protected void convertToTypes(com.google.inject.matcher.Matcher,com.google.inject.spi.TypeConverter)
+    225:225:protected com.google.inject.Stage currentStage()
+    233:233:protected com.google.inject.MembersInjector getMembersInjector(java.lang.Class)
+    241:241:protected com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+    251:252:protected void bindListener(com.google.inject.matcher.Matcher,com.google.inject.spi.TypeListener)
+com.google.inject.Binder:
+    public abstract com.google.inject.binder.AnnotatedBindingBuilder bind(com.google.inject.TypeLiteral)
+    public abstract com.google.inject.binder.AnnotatedConstantBindingBuilder bindConstant()
+    public abstract void requestInjection(com.google.inject.TypeLiteral,java.lang.Object)
+    public abstract void requestInjection(java.lang.Object)
+    public varargs abstract void requestStaticInjection(java.lang.Class[])
+    public abstract com.google.inject.Stage currentStage()
+    public abstract void addError(java.lang.Throwable)
+    public abstract com.google.inject.Provider getProvider(java.lang.Class)
+    public abstract com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+    public abstract com.google.inject.MembersInjector getMembersInjector(java.lang.Class)
+    public abstract void convertToTypes(com.google.inject.matcher.Matcher,com.google.inject.spi.TypeConverter)
+    public abstract void bindListener(com.google.inject.matcher.Matcher,com.google.inject.spi.TypeListener)
+    public varargs abstract com.google.inject.Binder skipSources(java.lang.Class[])
+    public abstract void requireExplicitBindings()
+    public abstract void disableCircularProxies()
+com.google.inject.Binding:
+    public abstract java.lang.Object acceptScopingVisitor(com.google.inject.spi.BindingScopingVisitor)
+com.google.inject.ConfigurationException:
+    private static final long serialVersionUID
+com.google.inject.CreationException:
+    private static final long serialVersionUID
+com.google.inject.Guice:
+    83:83:public static varargs com.google.inject.Injector createInjector(com.google.inject.Stage,com.google.inject.Module[])
+com.google.inject.Injector:
+    public abstract com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+    public abstract com.google.inject.MembersInjector getMembersInjector(java.lang.Class)
+    public abstract java.util.Map getBindings()
+    public abstract java.util.Map getAllBindings()
+    public abstract com.google.inject.Binding getBinding(com.google.inject.Key)
+    public abstract com.google.inject.Binding getBinding(java.lang.Class)
+    public abstract com.google.inject.Binding getExistingBinding(com.google.inject.Key)
+    public abstract java.util.List findBindingsByType(com.google.inject.TypeLiteral)
+    public abstract com.google.inject.Provider getProvider(com.google.inject.Key)
+    public abstract com.google.inject.Provider getProvider(java.lang.Class)
+    public abstract java.lang.Object getInstance(com.google.inject.Key)
+    public abstract java.lang.Object getInstance(java.lang.Class)
+    public abstract com.google.inject.Injector getParent()
+    public abstract com.google.inject.Injector createChildInjector(java.lang.Iterable)
+    public varargs abstract com.google.inject.Injector createChildInjector(com.google.inject.Module[])
+    public abstract java.util.Map getScopeBindings()
+    public abstract java.util.Set getTypeConverterBindings()
+com.google.inject.Key:
+    69:73:protected Key(java.lang.Class)
+    88:93:protected Key(java.lang.annotation.Annotation)
+    156:156:boolean hasAnnotationType()
+    160:166:java.lang.String getAnnotationName()
+    170:170:java.lang.Class getRawType()
+    177:177:com.google.inject.Key providerKey()
+    205:205:static com.google.inject.Key get(java.lang.Class,com.google.inject.Key$AnnotationStrategy)
+    220:220:public static com.google.inject.Key get(java.lang.Class,java.lang.Class)
+    234:234:public static com.google.inject.Key get(java.lang.reflect.Type)
+    242:242:public static com.google.inject.Key get(java.lang.reflect.Type,java.lang.Class)
+    249:249:public static com.google.inject.Key get(java.lang.reflect.Type,java.lang.annotation.Annotation)
+    264:264:public static com.google.inject.Key get(com.google.inject.TypeLiteral,java.lang.Class)
+    282:282:public com.google.inject.Key ofType(java.lang.Class)
+    351:354:static com.google.inject.Key$AnnotationStrategy strategyFor(java.lang.Class)
+com.google.inject.OutOfScopeException
+com.google.inject.PrivateBinder:
+    public abstract com.google.inject.binder.AnnotatedElementBuilder expose(java.lang.Class)
+    public abstract com.google.inject.binder.AnnotatedElementBuilder expose(com.google.inject.TypeLiteral)
+    public abstract com.google.inject.PrivateBinder withSource(java.lang.Object)
+    public varargs abstract com.google.inject.PrivateBinder skipSources(java.lang.Class[])
+com.google.inject.PrivateModule:
+    private com.google.inject.PrivateBinder binder
+    92:101:public final synchronized void configure(com.google.inject.Binder)
+    protected abstract void configure()
+    111:112:protected final void expose(com.google.inject.Key)
+    120:120:protected final com.google.inject.binder.AnnotatedElementBuilder expose(java.lang.Class)
+    129:129:protected final com.google.inject.binder.AnnotatedElementBuilder expose(com.google.inject.TypeLiteral)
+    138:138:protected final com.google.inject.PrivateBinder binder()
+    145:146:protected final void bindScope(java.lang.Class,com.google.inject.Scope)
+    152:152:protected final com.google.inject.binder.LinkedBindingBuilder bind(com.google.inject.Key)
+    159:159:protected final com.google.inject.binder.AnnotatedBindingBuilder bind(com.google.inject.TypeLiteral)
+    166:166:protected final com.google.inject.binder.AnnotatedBindingBuilder bind(java.lang.Class)
+    173:173:protected final com.google.inject.binder.AnnotatedConstantBindingBuilder bindConstant()
+    180:181:protected final void install(com.google.inject.Module)
+    187:188:protected final varargs void addError(java.lang.String,java.lang.Object[])
+    194:195:protected final void addError(java.lang.Throwable)
+    201:202:protected final void addError(com.google.inject.spi.Message)
+    208:209:protected final void requestInjection(java.lang.Object)
+    215:216:protected final varargs void requestStaticInjection(java.lang.Class[])
+    233:234:protected final void requireBinding(com.google.inject.Key)
+    240:241:protected final void requireBinding(java.lang.Class)
+    247:247:protected final com.google.inject.Provider getProvider(com.google.inject.Key)
+    254:254:protected final com.google.inject.Provider getProvider(java.lang.Class)
+    262:263:protected final void convertToTypes(com.google.inject.matcher.Matcher,com.google.inject.spi.TypeConverter)
+    269:269:protected final com.google.inject.Stage currentStage()
+    276:276:protected com.google.inject.MembersInjector getMembersInjector(java.lang.Class)
+    283:283:protected com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+    291:292:protected void bindListener(com.google.inject.matcher.Matcher,com.google.inject.spi.TypeListener)
+com.google.inject.ProvisionException:
+    private static final long serialVersionUID
+    45:47:public ProvisionException(java.lang.String,java.lang.Throwable)
+com.google.inject.Scope:
+    public abstract java.lang.String toString()
+com.google.inject.Scopes:
+    34:34:private Scopes()
+    132:171:public static boolean isSingleton(com.google.inject.Binding)
+com.google.inject.Scopes$3
+com.google.inject.TypeLiteral:
+    135:135:final com.google.inject.TypeLiteral providerType()
+    309:325:public java.util.List getExceptionTypes(java.lang.reflect.Member)
+com.google.inject.binder.AnnotatedBindingBuilder:
+    public abstract com.google.inject.binder.LinkedBindingBuilder annotatedWith(java.lang.Class)
+    public abstract com.google.inject.binder.LinkedBindingBuilder annotatedWith(java.lang.annotation.Annotation)
+com.google.inject.binder.AnnotatedConstantBindingBuilder
+com.google.inject.binder.AnnotatedElementBuilder:
+    public abstract void annotatedWith(java.lang.Class)
+    public abstract void annotatedWith(java.lang.annotation.Annotation)
+com.google.inject.binder.ConstantBindingBuilder
+com.google.inject.binder.LinkedBindingBuilder:
+    public abstract com.google.inject.binder.ScopedBindingBuilder to(java.lang.Class)
+    public abstract com.google.inject.binder.ScopedBindingBuilder to(com.google.inject.TypeLiteral)
+    public abstract com.google.inject.binder.ScopedBindingBuilder to(com.google.inject.Key)
+    public abstract com.google.inject.binder.ScopedBindingBuilder toProvider(com.google.inject.TypeLiteral)
+    public abstract com.google.inject.binder.ScopedBindingBuilder toProvider(com.google.inject.Key)
+    public abstract com.google.inject.binder.ScopedBindingBuilder toConstructor(java.lang.reflect.Constructor)
+    public abstract com.google.inject.binder.ScopedBindingBuilder toConstructor(java.lang.reflect.Constructor,com.google.inject.TypeLiteral)
+com.google.inject.binder.ScopedBindingBuilder:
+    public abstract void in(com.google.inject.Scope)
+    public abstract void asEagerSingleton()
+com.google.inject.internal.AbstractBindingBuilder:
+    public static final java.lang.String IMPLEMENTATION_ALREADY_SET
+    public static final java.lang.String SINGLE_INSTANCE_AND_SCOPE
+    public static final java.lang.String SCOPE_ALREADY_SET
+    public static final java.lang.String BINDING_TO_NULL
+    public static final java.lang.String CONSTANT_VALUE_ALREADY_SET
+    public static final java.lang.String ANNOTATION_ALREADY_SPECIFIED
+    72:74:protected com.google.inject.internal.BindingImpl annotatedWithInternal(java.lang.Class)
+    80:82:protected com.google.inject.internal.BindingImpl annotatedWithInternal(java.lang.annotation.Annotation)
+    93:96:public void in(com.google.inject.Scope)
+    99:101:public void asEagerSingleton()
+    104:104:protected boolean keyTypeIsSet()
+    114:117:protected void checkNotAnnotated()
+com.google.inject.internal.Annotations:
+    42:86:public Annotations()
+    201:204:public static java.lang.Class canonicalizeIfNamed(java.lang.Class)
+com.google.inject.internal.BindingBuilder:
+    49:50:public com.google.inject.internal.BindingBuilder annotatedWith(java.lang.Class)
+    54:55:public com.google.inject.internal.BindingBuilder annotatedWith(java.lang.annotation.Annotation)
+    59:59:public com.google.inject.internal.BindingBuilder to(java.lang.Class)
+    63:63:public com.google.inject.internal.BindingBuilder to(com.google.inject.TypeLiteral)
+    67:72:public com.google.inject.internal.BindingBuilder to(com.google.inject.Key)
+    123:123:public com.google.inject.internal.BindingBuilder toProvider(com.google.inject.TypeLiteral)
+    138:138:public com.google.inject.binder.ScopedBindingBuilder toConstructor(java.lang.reflect.Constructor)
+    143:166:public com.google.inject.binder.ScopedBindingBuilder toConstructor(java.lang.reflect.Constructor,com.google.inject.TypeLiteral)
+    41:41:public bridge synthetic com.google.inject.binder.LinkedBindingBuilder annotatedWith(java.lang.annotation.Annotation)
+    41:41:public bridge synthetic com.google.inject.binder.LinkedBindingBuilder annotatedWith(java.lang.Class)
+    41:41:public bridge synthetic com.google.inject.binder.ScopedBindingBuilder toProvider(com.google.inject.Key)
+    41:41:public bridge synthetic com.google.inject.binder.ScopedBindingBuilder toProvider(com.google.inject.TypeLiteral)
+    41:41:public bridge synthetic com.google.inject.binder.ScopedBindingBuilder to(com.google.inject.Key)
+    41:41:public bridge synthetic com.google.inject.binder.ScopedBindingBuilder to(com.google.inject.TypeLiteral)
+    41:41:public bridge synthetic com.google.inject.binder.ScopedBindingBuilder to(java.lang.Class)
+com.google.inject.internal.BindingImpl:
+    97:97:public java.lang.Object acceptScopingVisitor(com.google.inject.spi.BindingScopingVisitor)
+    105:105:protected com.google.inject.internal.BindingImpl withKey(com.google.inject.Key)
+com.google.inject.internal.BytecodeGen:
+    private static final java.lang.String CGLIB_PACKAGE
+com.google.inject.internal.BytecodeGen$SystemBridgeHolder:
+    69:69:private BytecodeGen$SystemBridgeHolder()
+com.google.inject.internal.BytecodeGen$Visibility:
+    257:278:public static com.google.inject.internal.BytecodeGen$Visibility forMember(java.lang.reflect.Member)
+    public abstract com.google.inject.internal.BytecodeGen$Visibility and(com.google.inject.internal.BytecodeGen$Visibility)
+com.google.inject.internal.BytecodeGen$Visibility$1:
+    239:239:public com.google.inject.internal.BytecodeGen$Visibility and(com.google.inject.internal.BytecodeGen$Visibility)
+com.google.inject.internal.BytecodeGen$Visibility$2:
+    252:252:public com.google.inject.internal.BytecodeGen$Visibility and(com.google.inject.internal.BytecodeGen$Visibility)
+com.google.inject.internal.ConstantBindingBuilderImpl:
+    40:41:public ConstantBindingBuilderImpl(com.google.inject.Binder,java.util.List,java.lang.Object)
+    44:45:public com.google.inject.binder.ConstantBindingBuilder annotatedWith(java.lang.Class)
+    49:50:public com.google.inject.binder.ConstantBindingBuilder annotatedWith(java.lang.annotation.Annotation)
+    54:55:public void to(java.lang.String)
+    58:59:public void to(int)
+    62:63:public void to(long)
+    66:67:public void to(boolean)
+    70:71:public void to(double)
+    74:75:public void to(float)
+    78:79:public void to(short)
+    82:83:public void to(char)
+    86:87:public void to(byte)
+    90:91:public void to(java.lang.Class)
+    94:95:public void to(java.lang.Enum)
+    100:125:private void toConstant(java.lang.Class,java.lang.Object)
+com.google.inject.internal.ConstructionProxy:
+    public abstract java.lang.reflect.Constructor getConstructor()
+com.google.inject.internal.ConstructorBindingImpl:
+    56:63:public ConstructorBindingImpl(com.google.inject.Key,java.lang.Object,com.google.inject.internal.Scoping,com.google.inject.spi.InjectionPoint,java.util.Set)
+    196:196:protected com.google.inject.internal.BindingImpl withKey(com.google.inject.Key)
+    202:205:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.DefaultConstructionProxyFactory$1:
+    96:96:public java.lang.reflect.Constructor getConstructor()
+com.google.inject.internal.DeferredLookups:
+    52:54:public com.google.inject.Provider getProvider(com.google.inject.Key)
+    58:60:public com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+com.google.inject.internal.DelegatingInvocationHandler:
+    48:48:public java.lang.Object getDelegate()
+com.google.inject.internal.EncounterImpl:
+    90:97:public void register(com.google.inject.MembersInjector)
+    100:107:public void register(com.google.inject.spi.InjectionListener)
+    110:112:public varargs void addError(java.lang.String,java.lang.Object[])
+    115:117:public void addError(java.lang.Throwable)
+    120:122:public void addError(com.google.inject.spi.Message)
+    125:126:public com.google.inject.Provider getProvider(com.google.inject.Key)
+    130:130:public com.google.inject.Provider getProvider(java.lang.Class)
+    134:135:public com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+    139:139:public com.google.inject.MembersInjector getMembersInjector(java.lang.Class)
+com.google.inject.internal.ErrorHandler
+com.google.inject.internal.Errors:
+    private static final java.lang.String CONSTRUCTOR_RULES
+    241:241:public com.google.inject.internal.Errors constructorNotDefinedByType(java.lang.reflect.Constructor,com.google.inject.TypeLiteral)
+    278:278:public com.google.inject.internal.Errors cannotInjectNonVoidMethod(java.lang.reflect.Method)
+    369:369:public com.google.inject.internal.Errors errorEnhancingClass(java.lang.Class,java.lang.Throwable)
+com.google.inject.internal.Exceptions:
+    27:52:Exceptions()
+com.google.inject.internal.ExposedBindingImpl:
+    61:61:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.ExposureBuilder:
+    40:43:protected void checkNotAnnotated()
+    46:49:public void annotatedWith(java.lang.Class)
+    52:55:public void annotatedWith(java.lang.annotation.Annotation)
+com.google.inject.internal.InheritingState:
+    156:156:public java.util.Map getScopes()
+com.google.inject.internal.Initializables:
+    22:22:Initializables()
+com.google.inject.internal.InjectionRequestProcessor:
+    54:62:public java.lang.Boolean visit(com.google.inject.spi.InjectionRequest)
+    36:36:public bridge synthetic java.lang.Object visit(com.google.inject.spi.InjectionRequest)
+com.google.inject.internal.InjectorImpl:
+    139:139:public java.util.List findBindingsByType(com.google.inject.TypeLiteral)
+    209:209:public com.google.inject.Binding getBinding(java.lang.Class)
+    213:213:public com.google.inject.Injector getParent()
+    217:217:public com.google.inject.Injector createChildInjector(java.lang.Iterable)
+    224:224:public varargs com.google.inject.Injector createChildInjector(com.google.inject.Module[])
+    857:857:public java.util.Map getBindings()
+    861:866:public java.util.Map getAllBindings()
+    870:870:public java.util.Map getScopeBindings()
+    874:874:public java.util.Set getTypeConverterBindings()
+    961:961:public com.google.inject.Provider getProvider(java.lang.Class)
+    1009:1009:public java.lang.Object getInstance(com.google.inject.Key)
+    1013:1013:public java.lang.Object getInstance(java.lang.Class)
+    66:66:public bridge synthetic com.google.inject.Binding getExistingBinding(com.google.inject.Key)
+    66:66:public bridge synthetic com.google.inject.Binding getBinding(com.google.inject.Key)
+com.google.inject.internal.InjectorImpl$BindingsMultimap:
+    892:893:java.util.List getAll(com.google.inject.TypeLiteral)
+com.google.inject.internal.InjectorImpl$ConvertedConstantBindingImpl:
+    460:460:public java.lang.Object getValue()
+    464:464:public com.google.inject.spi.TypeConverterBinding getTypeConverterBinding()
+    476:476:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.InjectorImpl$ProviderBindingImpl:
+    349:349:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.InjectorOptionsProcessor:
+    43:44:public java.lang.Boolean visit(com.google.inject.spi.DisableCircularProxiesOption)
+    49:50:public java.lang.Boolean visit(com.google.inject.spi.RequireExplicitBindingsOption)
+    32:32:public bridge synthetic java.lang.Object visit(com.google.inject.spi.RequireExplicitBindingsOption)
+    32:32:public bridge synthetic java.lang.Object visit(com.google.inject.spi.DisableCircularProxiesOption)
+com.google.inject.internal.InstanceBindingImpl:
+    83:83:public com.google.inject.internal.BindingImpl withKey(com.google.inject.Key)
+    88:89:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.InternalInjectorCreator:
+    86:87:public com.google.inject.internal.InternalInjectorCreator parentInjector(com.google.inject.internal.InjectorImpl)
+com.google.inject.internal.InternalInjectorCreator$ToolStageInjector:
+    249:249:public java.util.Map getBindings()
+    252:252:public java.util.Map getAllBindings()
+    255:255:public com.google.inject.Binding getBinding(com.google.inject.Key)
+    258:258:public com.google.inject.Binding getBinding(java.lang.Class)
+    261:261:public com.google.inject.Binding getExistingBinding(com.google.inject.Key)
+    264:264:public java.util.List findBindingsByType(com.google.inject.TypeLiteral)
+    267:267:public com.google.inject.Injector getParent()
+    270:270:public com.google.inject.Injector createChildInjector(java.lang.Iterable)
+    273:273:public varargs com.google.inject.Injector createChildInjector(com.google.inject.Module[])
+    276:276:public java.util.Map getScopeBindings()
+    279:279:public java.util.Set getTypeConverterBindings()
+    282:282:public com.google.inject.Provider getProvider(com.google.inject.Key)
+    286:286:public com.google.inject.Provider getProvider(java.lang.Class)
+    290:290:public com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+    294:294:public com.google.inject.MembersInjector getMembersInjector(java.lang.Class)
+    298:298:public java.lang.Object getInstance(com.google.inject.Key)
+    302:302:public java.lang.Object getInstance(java.lang.Class)
+com.google.inject.internal.LinkedBindingImpl:
+    63:63:public com.google.inject.internal.BindingImpl withKey(com.google.inject.Key)
+    67:68:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.LinkedProviderBindingImpl:
+    65:65:public com.google.inject.internal.BindingImpl withKey(com.google.inject.Key)
+    69:71:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.LookupProcessor:
+    38:45:public java.lang.Boolean visit(com.google.inject.spi.MembersInjectorLookup)
+    30:30:public bridge synthetic java.lang.Object visit(com.google.inject.spi.MembersInjectorLookup)
+com.google.inject.internal.Lookups:
+    public abstract com.google.inject.Provider getProvider(com.google.inject.Key)
+    public abstract com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+com.google.inject.internal.MembersInjectorImpl:
+    54:54:public com.google.inject.internal.util.$ImmutableList getMemberInjectors()
+com.google.inject.internal.MoreTypes:
+    49:49:private MoreTypes()
+com.google.inject.internal.MoreTypes$GenericArrayTypeImpl:
+    private static final long serialVersionUID
+com.google.inject.internal.MoreTypes$ParameterizedTypeImpl:
+    private static final long serialVersionUID
+com.google.inject.internal.MoreTypes$WildcardTypeImpl:
+    private static final long serialVersionUID
+com.google.inject.internal.Nullability:
+    23:23:private Nullability()
+com.google.inject.internal.PrivateElementsImpl:
+    113:123:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.ProviderInstanceBindingImpl:
+    86:86:public com.google.inject.internal.BindingImpl withKey(com.google.inject.Key)
+    91:93:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.ProviderMethod:
+    67:67:public com.google.inject.Key getKey()
+    71:71:public java.lang.reflect.Method getMethod()
+    76:76:public java.lang.Object getInstance()
+com.google.inject.internal.Scoping:
+    public abstract java.lang.Object acceptVisitor(com.google.inject.spi.BindingScopingVisitor)
+    public abstract void applyTo(com.google.inject.binder.ScopedBindingBuilder)
+com.google.inject.internal.Scoping$1:
+    44:44:public java.lang.Object acceptVisitor(com.google.inject.spi.BindingScopingVisitor)
+    57:57:public void applyTo(com.google.inject.binder.ScopedBindingBuilder)
+com.google.inject.internal.Scoping$2:
+    62:62:public java.lang.Object acceptVisitor(com.google.inject.spi.BindingScopingVisitor)
+    74:75:public void applyTo(com.google.inject.binder.ScopedBindingBuilder)
+com.google.inject.internal.Scoping$3:
+    80:80:public java.lang.Object acceptVisitor(com.google.inject.spi.BindingScopingVisitor)
+    92:93:public void applyTo(com.google.inject.binder.ScopedBindingBuilder)
+com.google.inject.internal.Scoping$4:
+    98:98:public java.lang.Object acceptVisitor(com.google.inject.spi.BindingScopingVisitor)
+    110:111:public void applyTo(com.google.inject.binder.ScopedBindingBuilder)
+com.google.inject.internal.Scoping$5:
+    122:122:public java.lang.Object acceptVisitor(com.google.inject.spi.BindingScopingVisitor)
+    134:135:public void applyTo(com.google.inject.binder.ScopedBindingBuilder)
+com.google.inject.internal.Scoping$6:
+    146:146:public java.lang.Object acceptVisitor(com.google.inject.spi.BindingScopingVisitor)
+    158:159:public void applyTo(com.google.inject.binder.ScopedBindingBuilder)
+com.google.inject.internal.State:
+    public abstract java.util.Map getScopes()
+com.google.inject.internal.State$1:
+    113:113:public java.util.Map getScopes()
+com.google.inject.internal.UniqueAnnotations:
+    29:29:private UniqueAnnotations()
+com.google.inject.internal.UntargettedBindingImpl:
+    50:50:public com.google.inject.internal.BindingImpl withKey(com.google.inject.Key)
+    54:55:public void applyTo(com.google.inject.Binder)
+com.google.inject.internal.util.$Classes:
+    31:31:public $Classes()
+com.google.inject.internal.util.$Collections2:
+    30:30:private $Collections2()
+com.google.inject.internal.util.$CustomConcurrentHashMap:
+    128:128:private $CustomConcurrentHashMap()
+com.google.inject.internal.util.$CustomConcurrentHashMap$Builder:
+    145:149:public com.google.inject.internal.util.$CustomConcurrentHashMap$Builder loadFactor(float)
+    161:165:public com.google.inject.internal.util.$CustomConcurrentHashMap$Builder initialCapacity(int)
+    185:189:public com.google.inject.internal.util.$CustomConcurrentHashMap$Builder concurrencyLevel(int)
+    204:207:public java.util.concurrent.ConcurrentMap buildMap(com.google.inject.internal.util.$CustomConcurrentHashMap$Strategy)
+com.google.inject.internal.util.$CustomConcurrentHashMap$ComputingImpl:
+    static final long serialVersionUID
+com.google.inject.internal.util.$CustomConcurrentHashMap$Impl:
+    static final int MAXIMUM_CAPACITY
+    static final int MAX_SEGMENTS
+    static final int RETRIES_BEFORE_LOCK
+    private static final long serialVersionUID
+    1879:1888:private void writeObject(java.io.ObjectOutputStream)
+    1918:1970:private void readObject(java.io.ObjectInputStream)
+com.google.inject.internal.util.$CustomConcurrentHashMap$Impl$Fields
+com.google.inject.internal.util.$CustomConcurrentHashMap$Impl$HashIterator:
+    1623:1623:public boolean hasMoreElements()
+com.google.inject.internal.util.$CustomConcurrentHashMap$Impl$InternalsImpl:
+    static final long serialVersionUID
+    637:641:public java.lang.Object getEntry(java.lang.Object)
+com.google.inject.internal.util.$CustomConcurrentHashMap$Internals:
+    public abstract java.lang.Object getEntry(java.lang.Object)
+com.google.inject.internal.util.$CustomConcurrentHashMap$SimpleInternalEntry
+com.google.inject.internal.util.$CustomConcurrentHashMap$SimpleStrategy
+com.google.inject.internal.util.$ExpirationTimer:
+    24:24:$ExpirationTimer()
+com.google.inject.internal.util.$FinalizablePhantomReference
+com.google.inject.internal.util.$FinalizableReferenceQueue:
+    private static final java.lang.String FINALIZER_CLASS_NAME
+com.google.inject.internal.util.$FinalizableReferenceQueue$DecoupledLoader:
+    private static final java.lang.String LOADING_ERROR
+com.google.inject.internal.util.$Finalizer:
+    private static final java.lang.String FINALIZABLE_REFERENCE
+    76:83:public static java.lang.ref.ReferenceQueue startFinalizer(java.lang.Class,java.lang.Object)
+    92:103:private $Finalizer(java.lang.Class,java.lang.Object)
+com.google.inject.internal.util.$Function:
+    public abstract boolean equals(java.lang.Object)
+com.google.inject.internal.util.$Hashing:
+    private static final int MAX_TABLE_SIZE
+    private static final int CUTOFF
+    26:26:private $Hashing()
+com.google.inject.internal.util.$ImmutableCollection:
+    257:257:java.lang.Object writeReplace()
+com.google.inject.internal.util.$ImmutableCollection$ArrayImmutableCollection
+com.google.inject.internal.util.$ImmutableCollection$ArrayImmutableCollection$1
+com.google.inject.internal.util.$ImmutableCollection$SerializedForm
+com.google.inject.internal.util.$ImmutableEntry:
+    private static final long serialVersionUID
+com.google.inject.internal.util.$ImmutableList:
+    88:88:public static com.google.inject.internal.util.$ImmutableList of(java.lang.Object,java.lang.Object)
+    106:106:public static com.google.inject.internal.util.$ImmutableList of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+    115:115:public static com.google.inject.internal.util.$ImmutableList of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+    168:168:public static com.google.inject.internal.util.$ImmutableList copyOf(java.util.Iterator)
+    public abstract int indexOf(java.lang.Object)
+    public abstract int lastIndexOf(java.lang.Object)
+    597:597:private void readObject(java.io.ObjectInputStream)
+    601:601:java.lang.Object writeReplace()
+    609:609:public static com.google.inject.internal.util.$ImmutableList$Builder builder()
+com.google.inject.internal.util.$ImmutableList$Builder
+com.google.inject.internal.util.$ImmutableList$SerializedForm
+com.google.inject.internal.util.$ImmutableMap:
+    82:82:public static com.google.inject.internal.util.$ImmutableMap of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+    92:92:public static com.google.inject.internal.util.$ImmutableMap of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+    103:103:public static com.google.inject.internal.util.$ImmutableMap of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+    114:114:public static com.google.inject.internal.util.$ImmutableMap of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+    125:125:public static com.google.inject.internal.util.$ImmutableMap$Builder builder()
+    public abstract boolean containsKey(java.lang.Object)
+    public abstract boolean containsValue(java.lang.Object)
+    777:777:java.lang.Object writeReplace()
+com.google.inject.internal.util.$ImmutableMap$Builder:
+    179:182:public com.google.inject.internal.util.$ImmutableMap$Builder putAll(java.util.Map)
+com.google.inject.internal.util.$ImmutableMap$SerializedForm
+com.google.inject.internal.util.$ImmutableSet:
+    141:142:public static com.google.inject.internal.util.$ImmutableSet copyOf(java.util.Iterator)
+    541:541:java.lang.Object writeReplace()
+com.google.inject.internal.util.$ImmutableSet$Builder:
+    602:607:public varargs com.google.inject.internal.util.$ImmutableSet$Builder add(java.lang.Object[])
+    640:645:public com.google.inject.internal.util.$ImmutableSet$Builder addAll(java.util.Iterator)
+com.google.inject.internal.util.$ImmutableSet$SerializedForm
+com.google.inject.internal.util.$Iterables:
+    32:32:private $Iterables()
+com.google.inject.internal.util.$Iterators:
+    36:36:private $Iterators()
+    311:312:public static java.util.Enumeration asEnumeration(java.util.Iterator)
+com.google.inject.internal.util.$Iterators$9
+com.google.inject.internal.util.$Join
+com.google.inject.internal.util.$Join$1
+com.google.inject.internal.util.$Join$JoinException
+com.google.inject.internal.util.$Lists:
+    33:33:private $Lists()
+    70:73:public static varargs java.util.ArrayList newArrayList(java.lang.Object[])
+    77:80:static int computeArrayListCapacity(int)
+    120:125:public static java.util.ArrayList newArrayList(java.lang.Object,java.lang.Object[])
+com.google.inject.internal.util.$MapMaker:
+    115:116:public com.google.inject.internal.util.$MapMaker initialCapacity(int)
+    128:129:public com.google.inject.internal.util.$MapMaker loadFactor(float)
+    152:153:public com.google.inject.internal.util.$MapMaker concurrencyLevel(int)
+    175:175:public com.google.inject.internal.util.$MapMaker softKeys()
+    207:207:public com.google.inject.internal.util.$MapMaker softValues()
+    231:240:public com.google.inject.internal.util.$MapMaker expiration(long,java.util.concurrent.TimeUnit)
+    251:251:public java.util.concurrent.ConcurrentMap makeMap()
+com.google.inject.internal.util.$MapMaker$QueueHolder:
+    786:786:private $MapMaker$QueueHolder()
+com.google.inject.internal.util.$MapMaker$StrategyImpl:
+    private static final long serialVersionUID
+    427:433:$MapMaker$StrategyImpl(com.google.inject.internal.util.$MapMaker)
+    657:667:private void writeObject(java.io.ObjectOutputStream)
+    695:703:private void readObject(java.io.ObjectInputStream)
+com.google.inject.internal.util.$MapMaker$StrategyImpl$Fields
+com.google.inject.internal.util.$MapMaker$Strength:
+    abstract com.google.inject.internal.util.$MapMaker$ReferenceEntry copyEntry(java.lang.Object,com.google.inject.internal.util.$MapMaker$ReferenceEntry,com.google.inject.internal.util.$MapMaker$ReferenceEntry)
+com.google.inject.internal.util.$MapMaker$Strength$1:
+    319:320:com.google.inject.internal.util.$MapMaker$ReferenceEntry copyEntry(java.lang.Object,com.google.inject.internal.util.$MapMaker$ReferenceEntry,com.google.inject.internal.util.$MapMaker$ReferenceEntry)
+com.google.inject.internal.util.$MapMaker$Strength$2:
+    348:349:com.google.inject.internal.util.$MapMaker$ReferenceEntry copyEntry(java.lang.Object,com.google.inject.internal.util.$MapMaker$ReferenceEntry,com.google.inject.internal.util.$MapMaker$ReferenceEntry)
+com.google.inject.internal.util.$MapMaker$Strength$3:
+    378:379:com.google.inject.internal.util.$MapMaker$ReferenceEntry copyEntry(java.lang.Object,com.google.inject.internal.util.$MapMaker$ReferenceEntry,com.google.inject.internal.util.$MapMaker$ReferenceEntry)
+com.google.inject.internal.util.$Maps:
+    36:36:private $Maps()
+    67:67:public static java.util.TreeMap newTreeMap()
+com.google.inject.internal.util.$ObjectArrays:
+    27:27:private $ObjectArrays()
+com.google.inject.internal.util.$Objects:
+    27:27:private $Objects()
+com.google.inject.internal.util.$Preconditions:
+    61:61:private $Preconditions()
+    224:229:public static varargs java.lang.Object checkNotNull(java.lang.Object,java.lang.String,java.lang.Object[])
+    242:245:public static java.lang.Iterable checkContentsNotNull(java.lang.Iterable)
+    261:264:public static java.lang.Iterable checkContentsNotNull(java.lang.Iterable,java.lang.Object)
+    287:291:public static varargs java.lang.Iterable checkContentsNotNull(java.lang.Iterable,java.lang.String,java.lang.Object[])
+    295:313:private static boolean containsOrIsNull(java.lang.Iterable)
+com.google.inject.internal.util.$Sets:
+    42:42:private $Sets()
+    115:115:public static java.util.Set newSetFromMap(java.util.Map)
+    190:194:static int hashCodeImpl(java.util.Set)
+com.google.inject.internal.util.$Sets$SetFromMap
+com.google.inject.internal.util.$StackTraceElements:
+    29:29:public $StackTraceElements()
+com.google.inject.internal.util.$Strings:
+    25:25:private $Strings()
+com.google.inject.matcher.AbstractMatcher:
+    29:29:public com.google.inject.matcher.Matcher and(com.google.inject.matcher.Matcher)
+    33:33:public com.google.inject.matcher.Matcher or(com.google.inject.matcher.Matcher)
+com.google.inject.matcher.AbstractMatcher$AndMatcher
+com.google.inject.matcher.AbstractMatcher$OrMatcher
+com.google.inject.matcher.Matcher:
+    public abstract com.google.inject.matcher.Matcher and(com.google.inject.matcher.Matcher)
+    public abstract com.google.inject.matcher.Matcher or(com.google.inject.matcher.Matcher)
+com.google.inject.matcher.Matchers:
+    34:34:private Matchers()
+    40:40:public static com.google.inject.matcher.Matcher any()
+    65:65:public static com.google.inject.matcher.Matcher not(com.google.inject.matcher.Matcher)
+    97:100:private static void checkForRuntimeRetention(java.lang.Class)
+    108:108:public static com.google.inject.matcher.Matcher annotatedWith(java.lang.Class)
+    146:146:public static com.google.inject.matcher.Matcher annotatedWith(java.lang.annotation.Annotation)
+    219:219:public static com.google.inject.matcher.Matcher only(java.lang.Object)
+    290:290:public static com.google.inject.matcher.Matcher inPackage(java.lang.Package)
+    333:333:public static com.google.inject.matcher.Matcher inSubpackage(java.lang.String)
+    370:370:public static com.google.inject.matcher.Matcher returns(com.google.inject.matcher.Matcher)
+    33:33:static synthetic void access$200(java.lang.Class)
+com.google.inject.matcher.Matchers$AnnotatedWith
+com.google.inject.matcher.Matchers$AnnotatedWithType
+com.google.inject.matcher.Matchers$Any:
+    private static final long serialVersionUID
+    55:55:public java.lang.Object readResolve()
+com.google.inject.matcher.Matchers$IdenticalTo:
+    private static final long serialVersionUID
+com.google.inject.matcher.Matchers$InPackage
+com.google.inject.matcher.Matchers$InSubpackage
+com.google.inject.matcher.Matchers$Not
+com.google.inject.matcher.Matchers$Only
+com.google.inject.matcher.Matchers$Returns
+com.google.inject.matcher.Matchers$SubclassesOf:
+    private static final long serialVersionUID
+com.google.inject.multibindings.Element
+com.google.inject.multibindings.MapBinder
+com.google.inject.multibindings.MapBinder$1
+com.google.inject.multibindings.MapBinder$RealMapBinder
+com.google.inject.multibindings.MapBinder$RealMapBinder$1
+com.google.inject.multibindings.MapBinder$RealMapBinder$2
+com.google.inject.multibindings.MapBinder$RealMapBinder$MapEntry
+com.google.inject.multibindings.MapBinder$RealMapBinder$MultimapBinder
+com.google.inject.multibindings.MapBinder$RealMapBinder$MultimapBinder$1
+com.google.inject.multibindings.MapBinder$RealMapBinder$MultimapBinder$2
+com.google.inject.multibindings.MapBinder$RealMapBinder$RealMapBinderProviderWithDependencies
+com.google.inject.multibindings.MapBinder$RealMapBinder$RealMapWithExtensionProvider
+com.google.inject.multibindings.MapBinderBinding
+com.google.inject.multibindings.Multibinder
+com.google.inject.multibindings.Multibinder$1
+com.google.inject.multibindings.Multibinder$PermitDuplicatesModule
+com.google.inject.multibindings.Multibinder$RealMultibinder
+com.google.inject.multibindings.MultibinderBinding
+com.google.inject.multibindings.MultibindingsTargetVisitor
+com.google.inject.multibindings.RealElement
+com.google.inject.name.NamedImpl:
+    private static final long serialVersionUID
+com.google.inject.name.Names:
+    32:32:private Names()
+    46:52:public static void bindProperties(com.google.inject.Binder,java.util.Map)
+    60:68:public static void bindProperties(com.google.inject.Binder,java.util.Properties)
+com.google.inject.spi.BindingScopingVisitor
+com.google.inject.spi.ConstructorBinding:
+    public abstract java.util.Set getInjectableMembers()
+com.google.inject.spi.ConvertedConstantBinding:
+    public abstract java.lang.Object getValue()
+    public abstract com.google.inject.spi.TypeConverterBinding getTypeConverterBinding()
+    public abstract com.google.inject.Key getSourceKey()
+    public abstract java.util.Set getDependencies()
+com.google.inject.spi.DefaultBindingScopingVisitor
+com.google.inject.spi.DefaultElementVisitor:
+    67:67:public java.lang.Object visit(com.google.inject.spi.InjectionRequest)
+    79:79:public java.lang.Object visit(com.google.inject.spi.MembersInjectorLookup)
+    87:87:public java.lang.Object visit(com.google.inject.spi.DisableCircularProxiesOption)
+    91:91:public java.lang.Object visit(com.google.inject.spi.RequireExplicitBindingsOption)
+com.google.inject.spi.DisableCircularProxiesOption
+com.google.inject.spi.Element:
+    public abstract void applyTo(com.google.inject.Binder)
+com.google.inject.spi.ElementVisitor:
+    public abstract java.lang.Object visit(com.google.inject.spi.InjectionRequest)
+    public abstract java.lang.Object visit(com.google.inject.spi.MembersInjectorLookup)
+    public abstract java.lang.Object visit(com.google.inject.spi.RequireExplicitBindingsOption)
+    public abstract java.lang.Object visit(com.google.inject.spi.DisableCircularProxiesOption)
+com.google.inject.spi.Elements:
+    78:78:public static varargs java.util.List getElements(com.google.inject.Module[])
+    85:85:public static varargs java.util.List getElements(com.google.inject.Stage,com.google.inject.Module[])
+    92:92:public static java.util.List getElements(java.lang.Iterable)
+    110:110:public static com.google.inject.Module getModule(java.lang.Iterable)
+    121:121:static com.google.inject.spi.BindingTargetVisitor getInstanceVisitor()
+com.google.inject.spi.Elements$2
+com.google.inject.spi.Elements$RecordingBinder:
+    187:188:public void requestInjection(java.lang.Object)
+    191:192:public void requestInjection(com.google.inject.TypeLiteral,java.lang.Object)
+    195:198:public com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+    202:202:public com.google.inject.MembersInjector getMembersInjector(java.lang.Class)
+    206:207:public void bindListener(com.google.inject.matcher.Matcher,com.google.inject.spi.TypeListener)
+    210:213:public varargs void requestStaticInjection(java.lang.Class[])
+    237:237:public com.google.inject.Stage currentStage()
+    258:258:public com.google.inject.binder.AnnotatedBindingBuilder bind(com.google.inject.TypeLiteral)
+    266:266:public com.google.inject.binder.AnnotatedConstantBindingBuilder bindConstant()
+    276:276:public com.google.inject.Provider getProvider(java.lang.Class)
+    281:282:public void convertToTypes(com.google.inject.matcher.Matcher,com.google.inject.spi.TypeConverter)
+    290:295:public varargs com.google.inject.spi.Elements$RecordingBinder skipSources(java.lang.Class[])
+    305:306:public void disableCircularProxies()
+    309:310:public void requireExplicitBindings()
+    317:317:public com.google.inject.binder.AnnotatedElementBuilder expose(java.lang.Class)
+    321:321:public com.google.inject.binder.AnnotatedElementBuilder expose(com.google.inject.TypeLiteral)
+    124:124:public bridge synthetic com.google.inject.Binder skipSources(java.lang.Class[])
+    124:124:public bridge synthetic com.google.inject.PrivateBinder skipSources(java.lang.Class[])
+    124:124:public bridge synthetic com.google.inject.PrivateBinder withSource(java.lang.Object)
+com.google.inject.spi.Elements$RecordingBinder$1:
+    329:329:public void annotatedWith(java.lang.Class)
+    330:330:public void annotatedWith(java.lang.annotation.Annotation)
+com.google.inject.spi.ExposedBinding:
+    public abstract com.google.inject.spi.PrivateElements getPrivateElements()
+    public abstract void applyTo(com.google.inject.Binder)
+com.google.inject.spi.InjectionPoint:
+    207:207:public static com.google.inject.spi.InjectionPoint forConstructor(java.lang.reflect.Constructor)
+    220:226:public static com.google.inject.spi.InjectionPoint forConstructor(java.lang.reflect.Constructor,com.google.inject.TypeLiteral)
+    304:304:public static com.google.inject.spi.InjectionPoint forConstructorOf(java.lang.Class)
+com.google.inject.spi.InjectionRequest
+com.google.inject.spi.MembersInjectorLookup
+com.google.inject.spi.MembersInjectorLookup$1
+com.google.inject.spi.Message:
+    private static final long serialVersionUID
+    115:116:public void applyTo(com.google.inject.Binder)
+    123:127:private java.lang.Object writeReplace()
+com.google.inject.spi.ProviderBinding:
+    public abstract com.google.inject.Key getProvidedKey()
+com.google.inject.spi.ProviderLookup:
+    68:69:public void applyTo(com.google.inject.Binder)
+    76:76:public com.google.inject.Provider getDelegate()
+com.google.inject.spi.RequireExplicitBindingsOption
+com.google.inject.spi.ScopeBinding:
+    63:64:public void applyTo(com.google.inject.Binder)
+com.google.inject.spi.StaticInjectionRequest:
+    38:41:StaticInjectionRequest(java.lang.Object,java.lang.Class)
+    48:48:public java.lang.Class getType()
+    68:69:public void applyTo(com.google.inject.Binder)
+com.google.inject.spi.TypeConverterBinding:
+    64:65:public void applyTo(com.google.inject.Binder)
+com.google.inject.spi.TypeEncounter:
+    public varargs abstract void addError(java.lang.String,java.lang.Object[])
+    public abstract void addError(java.lang.Throwable)
+    public abstract void addError(com.google.inject.spi.Message)
+    public abstract com.google.inject.Provider getProvider(com.google.inject.Key)
+    public abstract com.google.inject.Provider getProvider(java.lang.Class)
+    public abstract com.google.inject.MembersInjector getMembersInjector(com.google.inject.TypeLiteral)
+    public abstract com.google.inject.MembersInjector getMembersInjector(java.lang.Class)
+    public abstract void register(com.google.inject.MembersInjector)
+    public abstract void register(com.google.inject.spi.InjectionListener)
+com.google.inject.spi.TypeListenerBinding:
+    40:44:TypeListenerBinding(java.lang.Object,com.google.inject.spi.TypeListener,com.google.inject.matcher.Matcher)
+    65:66:public void applyTo(com.google.inject.Binder)
+com.google.inject.util.Modules:
+    52:52:private Modules()
+    75:75:public static varargs com.google.inject.util.Modules$OverriddenModuleBuilder override(com.google.inject.Module[])
+    95:95:public static com.google.inject.util.Modules$OverriddenModuleBuilder override(java.lang.Iterable)
+    102:102:public static varargs com.google.inject.Module combine(com.google.inject.Module[])
+    109:110:public static com.google.inject.Module combine(java.lang.Iterable)
+com.google.inject.util.Modules$2
+com.google.inject.util.Modules$ModuleWriter
+com.google.inject.util.Modules$OverriddenModuleBuilder
+com.google.inject.util.Modules$RealOverriddenModuleBuilder
+com.google.inject.util.Modules$RealOverriddenModuleBuilder$1
+com.google.inject.util.Modules$RealOverriddenModuleBuilder$1$1
+com.google.inject.util.Modules$RealOverriddenModuleBuilder$1$2
+com.google.inject.util.Modules$RealOverriddenModuleBuilder$1$3
+com.google.inject.util.Modules$RealOverriddenModuleBuilder$1$4
+com.google.inject.util.Node
+com.google.inject.util.Providers:
+    41:41:private Providers()
+    72:97:public static com.google.inject.Provider guicify(javax.inject.Provider)
+com.google.inject.util.Providers$2
+com.google.inject.util.Providers$3
+com.google.inject.util.Types:
+    40:40:private Types()
+    99:99:public static java.lang.reflect.ParameterizedType listOf(java.lang.reflect.Type)
+    109:109:public static java.lang.reflect.ParameterizedType setOf(java.lang.reflect.Type)
+    119:119:public static java.lang.reflect.ParameterizedType mapOf(java.lang.reflect.Type,java.lang.reflect.Type)
+com.yifandroid.wizdroid.BuildConfig
+com.yifandroid.wizdroid.R
+com.yifandroid.wizdroid.R$attr
+com.yifandroid.wizdroid.R$color
+com.yifandroid.wizdroid.R$dimen
+com.yifandroid.wizdroid.R$drawable
+com.yifandroid.wizdroid.R$id
+com.yifandroid.wizdroid.R$layout
+com.yifandroid.wizdroid.R$menu
+com.yifandroid.wizdroid.R$string
+com.yifandroid.wizdroid.R$style
+com.yifandroid.wizdroid.WizDroidAcitivity:
+    private static final int WIZFREQUENCY
+com.yifandroid.wizdroid.WizLog.LogFormatter:
+    public static final java.lang.String NL
+    public static final java.lang.String DEFAULT_DATE_FORMAT_NOW
+com.yifandroid.wizdroid.WizLog.LogHandler:
+    public static final java.lang.String TAG
+    32:33:public void setLevel(com.yifandroid.wizdroid.WizLog.LogLevel)
+com.yifandroid.wizdroid.WizLog.WizLogger:
+    17:19:public WizLogger(com.yifandroid.wizdroid.WizLog.LogHandler)
+    26:28:public varargs void debug(java.lang.String,java.lang.Object[])
+    31:32:public void info(java.lang.Object)
+    35:37:public varargs void info(java.lang.String,java.lang.Object[])
+    40:41:public void warn(java.lang.Object)
+    44:46:public varargs void warn(java.lang.String,java.lang.Object[])
+    49:51:public varargs void error(java.lang.String,java.lang.Object[])
+    54:55:public void error(java.lang.Object,java.lang.Throwable)
+    58:59:public void fatal(java.lang.Object)
+com.yifandroid.wizdroid.WizOnAudioFocusChangeListener:
+    21:25:WizOnAudioFocusChangeListener(android.media.AudioManager,android.content.ComponentName,com.yifandroid.wizdroid.WizLog.WizLogger)
+org.intellij.lang.annotations.Identifier
+org.intellij.lang.annotations.Language
+org.intellij.lang.annotations.Pattern
+org.intellij.lang.annotations.PrintFormat
+org.intellij.lang.annotations.PrintFormatPattern
+org.intellij.lang.annotations.RegExp
+org.intellij.lang.annotations.Subst
+org.jetbrains.annotations.Nls
+org.jetbrains.annotations.NonNls
+org.jetbrains.annotations.NotNull
+org.jetbrains.annotations.Nullable
+org.jetbrains.annotations.PropertyKey
+org.jetbrains.annotations.TestOnly
