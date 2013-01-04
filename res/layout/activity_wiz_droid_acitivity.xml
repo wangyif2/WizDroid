@@ -1,44 +1,46 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1.0">
+
+    <ImageView
+            android:id="@+id/wizdroid_off"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher"
+            android:visibility="invisible"
+            android:contentDescription="@string/wizdroid_off_des"/>
+    <ImageView
+            android:id="@+id/wizdroid_on"
+            android:layout_centerInParent="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/wizdroid"
+            android:visibility="invisible"
+            android:contentDescription="@string/wizdroid_on_des"/>
 
     <TextView
+            android:layout_above="@+id/wizdroid_on"
+            android:layout_centerHorizontal="true"
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp"
-            android:padding="@dimen/padding_medium"
+            android:layout_marginBottom="70dp"
             android:text="@string/block_msg"
             tools:context=".WizDroidAcitivity"/>
 
     <ToggleButton
+            android:layout_below="@+id/wizdroid_on"
+            android:layout_centerHorizontal="true"
             android:id="@+id/toggleButton1"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView1"
-            android:layout_margin="32dp"
+            android:layout_margin="50dp"
             android:background="@drawable/button"
             android:textColor="@android:color/white"
             android:textOff="WizDroid is OFF"
             android:textOn="WizDroid is ON"/>
-
-    <ImageView
-            android:id="@+id/wizdroid_off"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_launcher"
-            android:visibility="invisible"/>
-    <ImageView
-            android:id="@+id/wizdroid_on"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/wizdroid"
-            android:visibility="invisible"/>
-
 </RelativeLayout>
