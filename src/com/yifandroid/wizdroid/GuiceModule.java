@@ -46,5 +46,6 @@ public class GuiceModule extends AbstractModule{
         bind(WizOnAudioFocusChangeListener.class);
         bind(WizMediaActionReceiver.class);
         bind(WizAlarmReceiver.class);
+        bind(WizWidget.class);
     }
 }

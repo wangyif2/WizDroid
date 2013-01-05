@@ -31,6 +31,17 @@
 
         <receiver android:process=":remote" android:name=".WizAlarmReceiver"></receiver>
 
+        <receiver android:name=".WizWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/wiz_widget_info" />
+        </receiver>
+
     </application>
 
 </manifest>

@@ -2,13 +2,10 @@ package com.yifandroid.wizdroid;
 
 import android.app.Activity;
 import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
 import android.media.AudioManager;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.Menu;
 import android.view.View;
 import android.view.animation.Animation;
@@ -24,7 +21,7 @@ public class WizDroidAcitivity extends Activity {
     @Inject
     private WizLogger wizLogger;
     @Inject
-    private WizOnAudioFocusChangeListener listener;
+    private static WizOnAudioFocusChangeListener listener;
     @Inject
     private AudioManager audioManager;
     @Inject
@@ -32,14 +29,13 @@ public class WizDroidAcitivity extends Activity {
     @Inject
     private ComponentName componentName;
 
-    private Context mContext;
+    private static Context mContext;
 
-    //The frequency that we request for Audio Focus
-    private static final int WIZFREQUENCY = 30000;
-
-    ImageView wizOn, wizOff;
+    static ImageView wizOn;
+    static ImageView wizOff;
     ToggleButton wizToggleButton;
-    Animation animationSlideInLeft, animationSlideOutRight;
+    static Animation animationSlideInLeft;
+    static Animation animationSlideOutRight;
 
     private CompoundButton.OnCheckedChangeListener mOnCheckedChangeListener = new CompoundButton.OnCheckedChangeListener() {
         @Override
@@ -47,8 +43,8 @@ public class WizDroidAcitivity extends Activity {
             wizToggleButton.setEnabled(false);
 
             transitionAnimation(toggleState);
-            requestMediaButtonReceiver(toggleState);
-            WizMediaActionReceiver.toggleBlocking(WizDroidAcitivity.this.mContext, toggleState);
+            WizMediaActionReceiver.toggleBlocking(mContext, toggleState);
+            WizWidget.updateWidget(mContext, toggleState);
 
             wizToggleButton.setEnabled(true);
         }
@@ -69,6 +65,7 @@ public class WizDroidAcitivity extends Activity {
         super.onResume();
         wizToggleButton.setOnCheckedChangeListener(null);
         wizToggleButton.setChecked(WizMediaActionReceiver.isBlocking(this) == 1);
+        transitionAnimation(WizMediaActionReceiver.isBlocking(this) == 1);
         wizToggleButton.setOnCheckedChangeListener(this.mOnCheckedChangeListener);
     }
 
@@ -104,19 +101,7 @@ public class WizDroidAcitivity extends Activity {
         audioManager.unregisterMediaButtonEventReceiver(componentName);
     }
 
-    private void requestMediaButtonReceiver(boolean block) {
-        if (!block) {
-            Intent i = new Intent(this, WizAlarmReceiver.class);
-            PendingIntent pi = PendingIntent.getBroadcast(this, 0, i, 0);
-            alarmManager.cancel(pi);
-        } else {
-            Intent i = new Intent(this, WizAlarmReceiver.class);
-            PendingIntent pi = PendingIntent.getBroadcast(this, 0, i, 0);
-            alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime(), WIZFREQUENCY, pi);
-        }
-    }
-
-    private void transitionAnimation(boolean block) {
+    public static void transitionAnimation(boolean block) {
         if (!block) {
             //off transition
             wizOn.startAnimation(animationSlideOutRight);

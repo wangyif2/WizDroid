@@ -1,0 +1,8 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:minWidth="40dp"
+                    android:minHeight="40dp"
+                    android:updatePeriodMillis="500"
+                    android:previewImage="@drawable/wizdroid"
+                    android:initialLayout="@layout/wiz_widget_layout"
+        >
+</appwidget-provider>
