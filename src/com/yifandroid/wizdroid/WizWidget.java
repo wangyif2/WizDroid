@@ -6,7 +6,6 @@ import android.appwidget.AppWidgetProvider;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.widget.RemoteViews;
 import com.google.inject.Inject;
 import com.yifandroid.wizdroid.WizLog.WizLogger;
@@ -23,15 +22,13 @@ public class WizWidget extends AppWidgetProvider {
 
     private static ComponentName wizName;
     private static final String toggleAction = "com.yifandroid.wizdroid.TOGGLE";
-    private static final ComponentName BLOCKER = new ComponentName("com.yifandroid.wizdroid", "com.yifandroid.wizdroid.WizMediaActionReceiver");
 
     @Override
     public void onReceive(Context context, Intent intent) {
         super.onReceive(context, intent);
 
-        PackageManager localPackageManager = context.getPackageManager();
-        boolean toggleState = localPackageManager.getComponentEnabledSetting(BLOCKER) == 1;
-        AppWidgetManager.getInstance(context).updateAppWidget(wizName, buildUpdate(context, toggleState));
+        boolean toggleState = WizMediaActionReceiver.isBlocking(context);
+        updateWidget(context,toggleState);
 
         if (intent.getAction().equals(toggleAction)) {
             WizWidget.updateWidget(context,!toggleState);

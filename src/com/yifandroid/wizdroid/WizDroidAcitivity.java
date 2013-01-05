@@ -64,8 +64,8 @@ public class WizDroidAcitivity extends Activity {
     protected void onResume() {
         super.onResume();
         wizToggleButton.setOnCheckedChangeListener(null);
-        wizToggleButton.setChecked(WizMediaActionReceiver.isBlocking(this) == 1);
-        transitionAnimation(WizMediaActionReceiver.isBlocking(this) == 1);
+        wizToggleButton.setChecked(WizMediaActionReceiver.isBlocking(this));
+        transitionAnimation(WizMediaActionReceiver.isBlocking(this));
         wizToggleButton.setOnCheckedChangeListener(this.mOnCheckedChangeListener);
     }
 
@@ -90,7 +90,7 @@ public class WizDroidAcitivity extends Activity {
         mContext = this;
 
         prepAnimation();
-        transitionAnimation(WizMediaActionReceiver.isBlocking(this) == 1);
+        transitionAnimation(WizMediaActionReceiver.isBlocking(this));
 
         wizLogger.debug("We are Magical");
     }

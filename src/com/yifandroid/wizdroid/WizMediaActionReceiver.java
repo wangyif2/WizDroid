@@ -27,8 +27,8 @@ public class WizMediaActionReceiver extends BroadcastReceiver {
     private static final int WIZFREQUENCY = 30000;
 
 
-    public static int isBlocking(Context paramContext) {
-        return paramContext.getPackageManager().getComponentEnabledSetting(BLOCKER);
+    public static boolean isBlocking(Context paramContext) {
+        return paramContext.getPackageManager().getComponentEnabledSetting(BLOCKER) == 1;
     }
 
     public static void toggleBlocking(Context paramContext, boolean toggleState) {
@@ -36,18 +36,32 @@ public class WizMediaActionReceiver extends BroadcastReceiver {
         PackageManager localPackageManager = paramContext.getPackageManager();
 
         if (toggleState) {
-            Intent i = new Intent(paramContext, WizAlarmReceiver.class);
-            PendingIntent pi = PendingIntent.getBroadcast(paramContext, 0, i, 0);
-            alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime(), WIZFREQUENCY, pi);
-
-            localPackageManager.setComponentEnabledSetting(BLOCKER, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 1);
+            setWizAlarmReceiver(paramContext, alarmManager);
+            enableMediaActionReceiver(localPackageManager);
         } else {
-            Intent i = new Intent(paramContext, WizAlarmReceiver.class);
-            PendingIntent pi = PendingIntent.getBroadcast(paramContext, 0, i, 0);
-            alarmManager.cancel(pi);
-
-            localPackageManager.setComponentEnabledSetting(BLOCKER, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 1);
+            cancelWizAlarmReceiver(paramContext, alarmManager);
+            disableMediaActionReceiver(localPackageManager);
         }
+    }
+
+    private static void disableMediaActionReceiver(PackageManager localPackageManager) {
+        localPackageManager.setComponentEnabledSetting(BLOCKER, PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 1);
+    }
+
+    private static void enableMediaActionReceiver(PackageManager localPackageManager) {
+        localPackageManager.setComponentEnabledSetting(BLOCKER, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 1);
+    }
+
+    private static void cancelWizAlarmReceiver(Context paramContext, AlarmManager alarmManager) {
+        Intent i = new Intent(paramContext, WizAlarmReceiver.class);
+        PendingIntent pi = PendingIntent.getBroadcast(paramContext, 0, i, 0);
+        alarmManager.cancel(pi);
+    }
+
+    private static void setWizAlarmReceiver(Context paramContext, AlarmManager alarmManager) {
+        Intent i = new Intent(paramContext, WizAlarmReceiver.class);
+        PendingIntent pi = PendingIntent.getBroadcast(paramContext, 0, i, 0);
+        alarmManager.setRepeating(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime(), WIZFREQUENCY, pi);
     }
 
     @Override
