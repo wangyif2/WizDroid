@@ -1,4 +1,4 @@
-package com.yifandroid.wizdroid;
+package com.yifandroid.wizdroids;
 
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -14,9 +14,9 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ToggleButton;
 import com.google.inject.Inject;
-import com.yifandroid.wizdroid.WizLog.WizLogger;
+import com.yifandroid.wizdroids.WizLog.WizLogger;
 
-public class WizDroidAcitivity extends Activity {
+public class WizDroidActivity extends Activity {
 
     @Inject
     private WizLogger wizLogger;

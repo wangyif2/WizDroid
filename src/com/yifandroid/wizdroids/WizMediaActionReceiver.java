@@ -1,4 +1,4 @@
-package com.yifandroid.wizdroid;
+package com.yifandroid.wizdroids;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -9,7 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.SystemClock;
 import com.google.inject.Inject;
-import com.yifandroid.wizdroid.WizLog.WizLogger;
+import com.yifandroid.wizdroids.WizLog.WizLogger;
 
 /**
  * Created by IntelliJ IDEA.
@@ -21,7 +21,7 @@ public class WizMediaActionReceiver extends BroadcastReceiver {
     @Inject
     private WizLogger wizLogger;
     @Inject
-    private static final ComponentName BLOCKER = new ComponentName("com.yifandroid.wizdroid", "com.yifandroid.wizdroid.WizMediaActionReceiver");
+    private static final ComponentName BLOCKER = new ComponentName("com.yifandroid.wizdroids", "com.yifandroid.wizdroids.WizMediaActionReceiver");
 
     //The frequency that we request for Audio Focus
     private static final int WIZFREQUENCY = 30000;

@@ -3,7 +3,7 @@
     <string name="app_name">WizDroid</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_wiz_droid_acitivity">WizDroid</string>
+    <string name="title_activity_wizdroid_activity">WizDroid</string>
     <string name="block_msg">Magically Block Noise From Headset Control</string>
     <string name="wizdroid_off_des">WizDroid is currently turned off</string>
     <string name="wizdroid_on_des">WizDroid is currently turned on</string>

@@ -1,4 +1,4 @@
-package com.yifandroid.wizdroid;
+package com.yifandroid.wizdroids;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -8,7 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.RemoteViews;
 import com.google.inject.Inject;
-import com.yifandroid.wizdroid.WizLog.WizLogger;
+import com.yifandroid.wizdroids.WizLog.WizLogger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,7 +21,7 @@ public class WizWidget extends AppWidgetProvider {
     private WizLogger wizLogger;
 
     private static ComponentName wizName;
-    private static final String toggleAction = "com.yifandroid.wizdroid.TOGGLE";
+    private static final String toggleAction = "com.yifandroid.wizdroids.TOGGLE";
 
     @Override
     public void onReceive(Context context, Intent intent) {

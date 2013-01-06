@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.yifandroid.wizdroid"
-          android:versionCode="1"
-          android:versionName="1.0">
+          package="com.yifandroid.wizdroids"
+          android:versionCode="2"
+          android:versionName="2.0">
 
     <uses-sdk
             android:minSdkVersion="8"
@@ -13,9 +13,9 @@
             android:theme="@style/AppTheme"
             android:name=".WizdroidApplication">
         <activity
-                android:name=".WizDroidAcitivity"
+                android:name=".WizDroidActivity"
                 android:launchMode="singleInstance"
-                android:label="@string/title_activity_wiz_droid_acitivity">
+                android:label="@string/title_activity_wizdroid_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

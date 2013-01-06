@@ -1,4 +1,4 @@
-package com.yifandroid.wizdroid;
+package com.yifandroid.wizdroids;
 
 import android.app.AlarmManager;
 import android.content.ComponentName;
@@ -7,9 +7,9 @@ import android.media.AudioManager;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provider;
 import com.google.inject.Singleton;
-import com.yifandroid.wizdroid.WizLog.LogHandler;
-import com.yifandroid.wizdroid.WizLog.LogHandlerProvider;
-import com.yifandroid.wizdroid.WizLog.WizLogger;
+import com.yifandroid.wizdroids.WizLog.LogHandler;
+import com.yifandroid.wizdroids.WizLog.LogHandlerProvider;
+import com.yifandroid.wizdroids.WizLog.WizLogger;
 
 /**
  * Created by IntelliJ IDEA.
