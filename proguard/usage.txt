@@ -1297,27 +1297,27 @@ com.google.inject.util.Types:
     99:99:public static java.lang.reflect.ParameterizedType listOf(java.lang.reflect.Type)
     109:109:public static java.lang.reflect.ParameterizedType setOf(java.lang.reflect.Type)
     119:119:public static java.lang.reflect.ParameterizedType mapOf(java.lang.reflect.Type,java.lang.reflect.Type)
-com.yifandroid.wizdroid.BuildConfig
-com.yifandroid.wizdroid.R
-com.yifandroid.wizdroid.R$attr
-com.yifandroid.wizdroid.R$color
-com.yifandroid.wizdroid.R$dimen
-com.yifandroid.wizdroid.R$drawable
-com.yifandroid.wizdroid.R$id
-com.yifandroid.wizdroid.R$layout
-com.yifandroid.wizdroid.R$menu
-com.yifandroid.wizdroid.R$string
-com.yifandroid.wizdroid.R$style
-com.yifandroid.wizdroid.WizDroidAcitivity:
+com.yifandroid.wizdroids.BuildConfig
+com.yifandroid.wizdroids.R
+com.yifandroid.wizdroids.R$attr
+com.yifandroid.wizdroids.R$color
+com.yifandroid.wizdroids.R$dimen
+com.yifandroid.wizdroids.R$drawable
+com.yifandroid.wizdroids.R$id
+com.yifandroid.wizdroids.R$layout
+com.yifandroid.wizdroids.R$menu
+com.yifandroid.wizdroids.R$string
+com.yifandroid.wizdroids.R$style
+com.yifandroid.wizdroids.WhizDroidActivity:
     private static final int WIZFREQUENCY
-com.yifandroid.wizdroid.WizLog.LogFormatter:
+com.yifandroid.wizdroids.WizLog.LogFormatter:
     public static final java.lang.String NL
     public static final java.lang.String DEFAULT_DATE_FORMAT_NOW
-com.yifandroid.wizdroid.WizLog.LogHandler:
+com.yifandroid.wizdroids.WizLog.LogHandler:
     public static final java.lang.String TAG
-    32:33:public void setLevel(com.yifandroid.wizdroid.WizLog.LogLevel)
-com.yifandroid.wizdroid.WizLog.WizLogger:
-    17:19:public WizLogger(com.yifandroid.wizdroid.WizLog.LogHandler)
+    32:33:public void setLevel(com.yifandroid.wizdroids.WizLog.LogLevel)
+com.yifandroid.wizdroids.WizLog.WizLogger:
+    17:19:public WizLogger(com.yifandroid.wizdroids.WizLog.LogHandler)
     26:28:public varargs void debug(java.lang.String,java.lang.Object[])
     31:32:public void info(java.lang.Object)
     35:37:public varargs void info(java.lang.String,java.lang.Object[])
@@ -1326,8 +1326,8 @@ com.yifandroid.wizdroid.WizLog.WizLogger:
     49:51:public varargs void error(java.lang.String,java.lang.Object[])
     54:55:public void error(java.lang.Object,java.lang.Throwable)
     58:59:public void fatal(java.lang.Object)
-com.yifandroid.wizdroid.WizOnAudioFocusChangeListener:
-    21:25:WizOnAudioFocusChangeListener(android.media.AudioManager,android.content.ComponentName,com.yifandroid.wizdroid.WizLog.WizLogger)
+com.yifandroid.wizdroids.WizOnAudioFocusChangeListener:
+    21:25:WizOnAudioFocusChangeListener(android.media.AudioManager,android.content.ComponentName,com.yifandroid.wizdroids.WizLog.WizLogger)
 org.intellij.lang.annotations.Identifier
 org.intellij.lang.annotations.Language
 org.intellij.lang.annotations.Pattern

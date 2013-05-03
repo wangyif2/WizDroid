@@ -3091,25 +3091,25 @@ com.google.inject.util.Types -> com.a.a.f.e:
     java.lang.reflect.WildcardType subtypeOf(java.lang.reflect.Type) -> b
     java.lang.reflect.WildcardType supertypeOf(java.lang.reflect.Type) -> c
     java.lang.reflect.ParameterizedType providerOf(java.lang.reflect.Type) -> d
-com.yifandroid.wizdroid.GuiceModule -> com.yifandroid.wizdroid.a:
+com.yifandroid.wizdroids.GuiceModule -> com.yifandroid.wizdroids.a:
     android.content.Context context -> b
     void configure() -> a
-    android.content.Context access$0(com.yifandroid.wizdroid.GuiceModule) -> a
-com.yifandroid.wizdroid.GuiceModule$1 -> com.yifandroid.wizdroid.b:
-    com.yifandroid.wizdroid.GuiceModule this$0 -> a
+    android.content.Context access$0(com.yifandroid.wizdroids.GuiceModule) -> a
+com.yifandroid.wizdroids.GuiceModule$1 -> com.yifandroid.wizdroids.b:
+    com.yifandroid.wizdroids.GuiceModule this$0 -> a
     android.media.AudioManager get() -> b
     java.lang.Object get() -> a
-com.yifandroid.wizdroid.GuiceModule$2 -> com.yifandroid.wizdroid.c:
-    com.yifandroid.wizdroid.GuiceModule this$0 -> a
+com.yifandroid.wizdroids.GuiceModule$2 -> com.yifandroid.wizdroids.c:
+    com.yifandroid.wizdroids.GuiceModule this$0 -> a
     android.app.AlarmManager get() -> b
     java.lang.Object get() -> a
-com.yifandroid.wizdroid.WizAlarmReceiver -> com.yifandroid.wizdroid.WizAlarmReceiver:
+com.yifandroid.wizdroids.WizAlarmReceiver -> com.yifandroid.wizdroids.WizAlarmReceiver:
     android.media.AudioManager audioManager -> a
     android.content.ComponentName componentName -> b
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.yifandroid.wizdroid.WizDroidAcitivity -> com.yifandroid.wizdroid.WizDroidAcitivity:
-    com.yifandroid.wizdroid.WizLog.WizLogger wizLogger -> f
-    com.yifandroid.wizdroid.WizOnAudioFocusChangeListener listener -> g
+com.yifandroid.wizdroids.WhizDroidActivity -> com.yifandroid.wizdroids.WhizDroidActivity:
+    com.yifandroid.wizdroids.WizLog.WizLogger wizLogger -> f
+    com.yifandroid.wizdroids.WizOnAudioFocusChangeListener listener -> g
     android.media.AudioManager audioManager -> h
     android.app.AlarmManager alarmManager -> i
     android.content.ComponentName componentName -> j
@@ -3130,62 +3130,62 @@ com.yifandroid.wizdroid.WizDroidAcitivity -> com.yifandroid.wizdroid.WizDroidAci
     void transitionAnimation(boolean) -> b
     void prepAnimation() -> c
     boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
-    void access$0(com.yifandroid.wizdroid.WizDroidAcitivity,boolean) -> a
-    void access$1(com.yifandroid.wizdroid.WizDroidAcitivity,boolean) -> b
-    android.content.Context access$2(com.yifandroid.wizdroid.WizDroidAcitivity) -> a
-com.yifandroid.wizdroid.WizDroidAcitivity$1 -> com.yifandroid.wizdroid.d:
-    com.yifandroid.wizdroid.WizDroidAcitivity this$0 -> a
+    void access$0(com.yifandroid.wizdroids.WhizDroidActivity,boolean) -> a
+    void access$1(com.yifandroid.wizdroids.WhizDroidActivity,boolean) -> b
+    android.content.Context access$2(com.yifandroid.wizdroids.WhizDroidActivity) -> a
+com.yifandroid.wizdroids.WhizDroidActivity$1 -> com.yifandroid.wizdroids.d:
+    com.yifandroid.wizdroids.WhizDroidActivity this$0 -> a
     void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
-com.yifandroid.wizdroid.WizLog.LogFormatter -> com.yifandroid.wizdroid.a.a:
+com.yifandroid.wizdroids.WizLog.LogFormatter -> com.yifandroid.wizdroids.a.a:
     java.text.DateFormat dateFormat -> a
-    com.yifandroid.wizdroid.WizLog.LogFormatter newInstance() -> a
-    java.lang.String format(com.yifandroid.wizdroid.WizLog.LogLevel,java.lang.Object,java.lang.Throwable) -> a
+    com.yifandroid.wizdroids.WizLog.LogFormatter newInstance() -> a
+    java.lang.String format(com.yifandroid.wizdroids.WizLog.LogLevel,java.lang.Object,java.lang.Throwable) -> a
     java.lang.String toString(java.lang.Throwable) -> a
-com.yifandroid.wizdroid.WizLog.LogHandler -> com.yifandroid.wizdroid.a.b:
+com.yifandroid.wizdroids.WizLog.LogHandler -> com.yifandroid.wizdroids.a.b:
     java.lang.String logTag -> a
-    com.yifandroid.wizdroid.WizLog.LogFormatter logFormatter -> b
-    com.yifandroid.wizdroid.WizLog.LogLevel level -> c
+    com.yifandroid.wizdroids.WizLog.LogFormatter logFormatter -> b
+    com.yifandroid.wizdroids.WizLog.LogLevel level -> c
     int[] $SWITCH_TABLE$com$yifandroid$wizdroid$WizLog$LogLevel -> d
-    com.yifandroid.wizdroid.WizLog.LogLevel getLevel() -> a
+    com.yifandroid.wizdroids.WizLog.LogLevel getLevel() -> a
     void handleDebug(java.lang.Object) -> a
     void handleInfo(java.lang.Object) -> b
     void handleWarning(java.lang.Object) -> c
     void handleError(java.lang.Object,java.lang.Throwable) -> a
     void handleFatal(java.lang.Object,java.lang.Throwable) -> b
-    void log(com.yifandroid.wizdroid.WizLog.LogLevel,java.lang.Object,java.lang.Throwable) -> a
+    void log(com.yifandroid.wizdroids.WizLog.LogLevel,java.lang.Object,java.lang.Throwable) -> a
     int[] $SWITCH_TABLE$com$yifandroid$wizdroid$WizLog$LogLevel() -> b
-com.yifandroid.wizdroid.WizLog.LogHandlerProvider -> com.yifandroid.wizdroid.a.c:
-    com.yifandroid.wizdroid.WizLog.LogHandler get() -> b
+com.yifandroid.wizdroids.WizLog.LogHandlerProvider -> com.yifandroid.wizdroids.a.c:
+    com.yifandroid.wizdroids.WizLog.LogHandler get() -> b
     java.lang.Object get() -> a
-com.yifandroid.wizdroid.WizLog.LogLevel -> com.yifandroid.wizdroid.a.d:
-    com.yifandroid.wizdroid.WizLog.LogLevel DEBUG -> a
-    com.yifandroid.wizdroid.WizLog.LogLevel INFO -> b
-    com.yifandroid.wizdroid.WizLog.LogLevel WARNING -> c
-    com.yifandroid.wizdroid.WizLog.LogLevel ERROR -> d
-    com.yifandroid.wizdroid.WizLog.LogLevel FATAL -> e
+com.yifandroid.wizdroids.WizLog.LogLevel -> com.yifandroid.wizdroids.a.d:
+    com.yifandroid.wizdroids.WizLog.LogLevel DEBUG -> a
+    com.yifandroid.wizdroids.WizLog.LogLevel INFO -> b
+    com.yifandroid.wizdroids.WizLog.LogLevel WARNING -> c
+    com.yifandroid.wizdroids.WizLog.LogLevel ERROR -> d
+    com.yifandroid.wizdroids.WizLog.LogLevel FATAL -> e
     int level -> f
     java.lang.String display -> g
-    com.yifandroid.wizdroid.WizLog.LogLevel[] ENUM$VALUES -> h
+    com.yifandroid.wizdroids.WizLog.LogLevel[] ENUM$VALUES -> h
     int getLevel() -> a
     java.lang.String getDisplay() -> b
-    com.yifandroid.wizdroid.WizLog.LogLevel[] values() -> values
-    com.yifandroid.wizdroid.WizLog.LogLevel valueOf(java.lang.String) -> valueOf
-com.yifandroid.wizdroid.WizLog.WizLogger -> com.yifandroid.wizdroid.a.e:
-    com.yifandroid.wizdroid.WizLog.LogHandler logHandler -> a
+    com.yifandroid.wizdroids.WizLog.LogLevel[] values() -> values
+    com.yifandroid.wizdroids.WizLog.LogLevel valueOf(java.lang.String) -> valueOf
+com.yifandroid.wizdroids.WizLog.WizLogger -> com.yifandroid.wizdroids.a.e:
+    com.yifandroid.wizdroids.WizLog.LogHandler logHandler -> a
     void debug(java.lang.Object) -> a
-    void logAdb(com.yifandroid.wizdroid.WizLog.LogLevel,java.lang.Object,java.lang.Throwable) -> a
-com.yifandroid.wizdroid.WizMediaActionReceiver -> com.yifandroid.wizdroid.WizMediaActionReceiver:
-    com.yifandroid.wizdroid.WizLog.WizLogger wizLogger -> a
+    void logAdb(com.yifandroid.wizdroids.WizLog.LogLevel,java.lang.Object,java.lang.Throwable) -> a
+com.yifandroid.wizdroids.WizMediaActionReceiver -> com.yifandroid.wizdroids.WizMediaActionReceiver:
+    com.yifandroid.wizdroids.WizLog.WizLogger wizLogger -> a
     android.content.ComponentName BLOCKER -> b
     int isBlocking(android.content.Context) -> a
     void toggleBlocking(android.content.Context,boolean) -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
-com.yifandroid.wizdroid.WizOnAudioFocusChangeListener -> com.yifandroid.wizdroid.e:
+com.yifandroid.wizdroids.WizOnAudioFocusChangeListener -> com.yifandroid.wizdroids.e:
     android.media.AudioManager audioManager -> a
     android.content.ComponentName componentName -> b
-    com.yifandroid.wizdroid.WizLog.WizLogger wizLogger -> c
+    com.yifandroid.wizdroids.WizLog.WizLogger wizLogger -> c
     void onAudioFocusChange(int) -> onAudioFocusChange
-com.yifandroid.wizdroid.WizdroidApplication -> com.yifandroid.wizdroid.WizdroidApplication:
+com.yifandroid.wizdroids.WizdroidApplication -> com.yifandroid.wizdroids.WizdroidApplication:
     com.google.inject.Injector injector -> a
     void onCreate() -> onCreate
     void createInjector() -> b

@@ -1,0 +1,7 @@
+W/ApplicationContext(  390): Calling a method in the system process without a qualified user:
+android.app.ContextImpl.startActivity:930 android.media.AudioService.startVoiceBasedInteractions:4527 android.media.AudioService.filterVoiceInputKeyEvent:4441
+
+W/ApplicationContext(  390): Calling a method in the system process without a qualified user:
+android.app.ContextImpl.startActivity:942 android.app.ContextImpl.startActivity:931 android.media.AudioService.startVoiceBasedInteractions:4527
+
+I/ActivityManager(  390): START u0 {act=android.speech.action.WEB_SEARCH flg=0x10800000 cmp=com.google.android.googlequicksearchbox/.SearchActivity} from pid 390

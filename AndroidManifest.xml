@@ -6,12 +6,12 @@
     <uses-sdk
             android:minSdkVersion="8"
             android:targetSdkVersion="15"/>
-
     <application
             android:icon="@drawable/wizdroid"
             android:label="@string/app_name"
             android:theme="@style/AppTheme"
             android:name=".WizdroidApplication">
+
         <activity
                 android:name=".WizDroidActivity"
                 android:launchMode="singleInstance"
@@ -24,12 +24,13 @@
         </activity>
 
         <receiver android:name=".WizMediaActionReceiver">
-            <intent-filter android:priority="10000">
+            <intent-filter android:priority="2147483647">
                 <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.speech.action.WEB_SEARCH"/>
             </intent-filter>
         </receiver>
 
-        <receiver android:process=":remote" android:name=".WizAlarmReceiver"></receiver>
+        <receiver android:process=":remote" android:name=".WizAlarmReceiver"/>
 
         <receiver android:name=".WizWidget">
             <intent-filter>

@@ -6,11 +6,8 @@ import com.google.inject.Inject;
 import com.yifandroid.wizdroids.WizLog.WizLogger;
 
 /**
- * Created by IntelliJ IDEA.
  * User: ywang
  * Date: 23/07/12
- * Time: 10:31 AM
- * To change this template use File | Settings | File Templates.
  */
 public class WizOnAudioFocusChangeListener implements AudioManager.OnAudioFocusChangeListener {
     private AudioManager audioManager;

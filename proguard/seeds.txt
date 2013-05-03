@@ -55,37 +55,37 @@ com.google.inject.internal.util.$MapMaker$Strength: com.google.inject.internal.u
 com.google.inject.internal.util.$MapMaker$Strength: com.google.inject.internal.util.$MapMaker$Strength valueOf(java.lang.String)
 com.google.inject.spi.InjectionPoint$Position: com.google.inject.spi.InjectionPoint$Position[] values()
 com.google.inject.spi.InjectionPoint$Position: com.google.inject.spi.InjectionPoint$Position valueOf(java.lang.String)
-com.yifandroid.wizdroid.R$color: int gray
-com.yifandroid.wizdroid.R$color: int lite
-com.yifandroid.wizdroid.R$dimen: int padding_large
-com.yifandroid.wizdroid.R$dimen: int padding_medium
-com.yifandroid.wizdroid.R$dimen: int padding_small
-com.yifandroid.wizdroid.R$drawable: int button
-com.yifandroid.wizdroid.R$drawable: int ic_action_search
-com.yifandroid.wizdroid.R$drawable: int ic_launcher
-com.yifandroid.wizdroid.R$drawable: int round_background
-com.yifandroid.wizdroid.R$drawable: int round_background_lite
-com.yifandroid.wizdroid.R$drawable: int round_background_pressed
-com.yifandroid.wizdroid.R$drawable: int wizdroid
-com.yifandroid.wizdroid.R$id: int textView1
-com.yifandroid.wizdroid.R$id: int toggleButton1
-com.yifandroid.wizdroid.R$id: int wizdroid_off
-com.yifandroid.wizdroid.R$id: int wizdroid_on
-com.yifandroid.wizdroid.R$layout: int activity_wiz_droid_acitivity
-com.yifandroid.wizdroid.R$menu: int activity_wiz_droid_acitivity
-com.yifandroid.wizdroid.R$string: int app_name
-com.yifandroid.wizdroid.R$string: int block_msg
-com.yifandroid.wizdroid.R$string: int hello_world
-com.yifandroid.wizdroid.R$string: int menu_settings
-com.yifandroid.wizdroid.R$string: int title_activity_wiz_droid_acitivity
-com.yifandroid.wizdroid.R$style: int AppTheme
-com.yifandroid.wizdroid.WizAlarmReceiver
-com.yifandroid.wizdroid.WizAlarmReceiver: WizAlarmReceiver()
-com.yifandroid.wizdroid.WizDroidAcitivity
-com.yifandroid.wizdroid.WizDroidAcitivity: WizDroidAcitivity()
-com.yifandroid.wizdroid.WizLog.LogLevel: com.yifandroid.wizdroid.WizLog.LogLevel[] values()
-com.yifandroid.wizdroid.WizLog.LogLevel: com.yifandroid.wizdroid.WizLog.LogLevel valueOf(java.lang.String)
-com.yifandroid.wizdroid.WizMediaActionReceiver
-com.yifandroid.wizdroid.WizMediaActionReceiver: WizMediaActionReceiver()
-com.yifandroid.wizdroid.WizdroidApplication
-com.yifandroid.wizdroid.WizdroidApplication: WizdroidApplication()
+com.yifandroid.wizdroids.R$color: int gray
+com.yifandroid.wizdroids.R$color: int lite
+com.yifandroid.wizdroids.R$dimen: int padding_large
+com.yifandroid.wizdroids.R$dimen: int padding_medium
+com.yifandroid.wizdroids.R$dimen: int padding_small
+com.yifandroid.wizdroids.R$drawable: int button
+com.yifandroid.wizdroids.R$drawable: int ic_action_search
+com.yifandroid.wizdroids.R$drawable: int ic_launcher
+com.yifandroid.wizdroids.R$drawable: int round_background
+com.yifandroid.wizdroids.R$drawable: int round_background_lite
+com.yifandroid.wizdroids.R$drawable: int round_background_pressed
+com.yifandroid.wizdroids.R$drawable: int wizdroid
+com.yifandroid.wizdroids.R$id: int textView1
+com.yifandroid.wizdroids.R$id: int toggleButton1
+com.yifandroid.wizdroids.R$id: int wizdroid_off
+com.yifandroid.wizdroids.R$id: int wizdroid_on
+com.yifandroid.wizdroids.R$layout: int activity_wiz_droid_acitivity
+com.yifandroid.wizdroids.R$menu: int activity_wiz_droid_acitivity
+com.yifandroid.wizdroids.R$string: int app_name
+com.yifandroid.wizdroids.R$string: int block_msg
+com.yifandroid.wizdroids.R$string: int hello_world
+com.yifandroid.wizdroids.R$string: int menu_settings
+com.yifandroid.wizdroids.R$string: int title_activity_wiz_droid_acitivity
+com.yifandroid.wizdroids.R$style: int AppTheme
+com.yifandroid.wizdroids.WizAlarmReceiver
+com.yifandroid.wizdroids.WizAlarmReceiver: WizAlarmReceiver()
+com.yifandroid.wizdroids.WhizDroidActivity
+com.yifandroid.wizdroids.WhizDroidActivity: WizDroidAcitivity()
+com.yifandroid.wizdroids.WizLog.LogLevel: com.yifandroid.wizdroids.WizLog.LogLevel[] values()
+com.yifandroid.wizdroids.WizLog.LogLevel: com.yifandroid.wizdroids.WizLog.LogLevel valueOf(java.lang.String)
+com.yifandroid.wizdroids.WizMediaActionReceiver
+com.yifandroid.wizdroids.WizMediaActionReceiver: WizMediaActionReceiver()
+com.yifandroid.wizdroids.WizdroidApplication
+com.yifandroid.wizdroids.WizdroidApplication: WizdroidApplication()
